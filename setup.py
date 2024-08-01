@@ -871,13 +871,14 @@ def add_builtin_fonts(args: Options) -> None:
                     font_file = q
                     break
         else:
-            lines = subprocess.check_output([
-                'fc-match', '--format', '%{file}\n%{postscriptname}', f'term:postscriptname={psname}', 'file', 'postscriptname']).decode().splitlines()
-            if len(lines) != 2:
-                raise SystemExit(f'fc-match returned unexpected output: {lines}')
-            if lines[1] != psname:
-                raise SystemExit(f'The font {human_name!r} was not found on your system, please install it')
-            font_file = lines[0]
+            # lines = subprocess.check_output([
+            #     'fc-match', '--format', '%{file}\n%{postscriptname}', f'term:postscriptname={psname}', 'file', 'postscriptname']).decode().splitlines()
+            # if len(lines) != 2:
+            #     raise SystemExit(f'fc-match returned unexpected output: {lines}')
+            # if lines[1] != psname:
+            #     raise SystemExit(f'The font {human_name!r} was not found on your system, please install it')
+            # font_file = lines[0]
+            font_file = "fonts/" + filename
         if not font_file:
             raise SystemExit(f'The font {human_name!r} was not found on your system, please install it')
         print(f'Copying {human_name!r} from {font_file}')

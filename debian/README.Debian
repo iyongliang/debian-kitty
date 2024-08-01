@@ -1,0 +1,5 @@
+kitty (0.35.2) noble; urgency=low
+
+  * Build for ubuntu 24.04 LTS
+
+ -- Yongliang Ni <neeyongliang@gmail.com>  Tue, 30 Jul 2024 23:34:14 +0800
