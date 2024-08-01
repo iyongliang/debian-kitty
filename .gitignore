@@ -1,4 +1,4 @@
-*.so
+g.so
 *.pyc
 *.pyo
 *.bin
@@ -12,7 +12,6 @@
 /dependencies
 /tags
 /build/
-/fonts/
 /linux-package/
 /kitty.app/
 /glad/out/

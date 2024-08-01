@@ -1,0 +1,3348 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mirror
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .editorconfig
+           .gitattributes
+           .github/FUNDING.yml
+           .github/ISSUE_TEMPLATE/bug_report.md
+           .github/ISSUE_TEMPLATE/feature_request.md
+           .github/dependabot.yml
+           .github/workflows/ci.py
+           .github/workflows/ci.yml
+           .github/workflows/codeql-analysis.yml
+           .github/workflows/macos_crash_report.py
+           .gitignore
+           .ignore
+           3rdparty/base64/README.md
+           3rdparty/base64/config.h
+           3rdparty/base64/include/libbase64.h
+           3rdparty/base64/lib/arch/avx/codec.c
+           3rdparty/base64/lib/arch/avx/enc_loop_asm.c
+           3rdparty/base64/lib/arch/avx2/codec.c
+           3rdparty/base64/lib/arch/avx2/dec_loop.c
+           3rdparty/base64/lib/arch/avx2/dec_reshuffle.c
+           3rdparty/base64/lib/arch/avx2/enc_loop.c
+           3rdparty/base64/lib/arch/avx2/enc_loop_asm.c
+           3rdparty/base64/lib/arch/avx2/enc_reshuffle.c
+           3rdparty/base64/lib/arch/avx2/enc_translate.c
+           3rdparty/base64/lib/arch/avx512/codec.c
+           3rdparty/base64/lib/arch/avx512/enc_loop.c
+           3rdparty/base64/lib/arch/avx512/enc_reshuffle_translate.c
+           3rdparty/base64/lib/arch/generic/32/dec_loop.c
+           3rdparty/base64/lib/arch/generic/32/enc_loop.c
+           3rdparty/base64/lib/arch/generic/64/enc_loop.c
+           3rdparty/base64/lib/arch/generic/codec.c
+           3rdparty/base64/lib/arch/generic/dec_head.c
+           3rdparty/base64/lib/arch/generic/dec_tail.c
+           3rdparty/base64/lib/arch/generic/enc_head.c
+           3rdparty/base64/lib/arch/generic/enc_tail.c
+           3rdparty/base64/lib/arch/neon32/codec.c
+           3rdparty/base64/lib/arch/neon32/dec_loop.c
+           3rdparty/base64/lib/arch/neon32/enc_loop.c
+           3rdparty/base64/lib/arch/neon32/enc_reshuffle.c
+           3rdparty/base64/lib/arch/neon32/enc_translate.c
+           3rdparty/base64/lib/arch/neon64/codec.c
+           3rdparty/base64/lib/arch/neon64/dec_loop.c
+           3rdparty/base64/lib/arch/neon64/enc_loop.c
+           3rdparty/base64/lib/arch/neon64/enc_loop_asm.c
+           3rdparty/base64/lib/arch/neon64/enc_reshuffle.c
+           3rdparty/base64/lib/arch/sse41/codec.c
+           3rdparty/base64/lib/arch/sse42/codec.c
+           3rdparty/base64/lib/arch/ssse3/codec.c
+           3rdparty/base64/lib/arch/ssse3/dec_loop.c
+           3rdparty/base64/lib/arch/ssse3/dec_reshuffle.c
+           3rdparty/base64/lib/arch/ssse3/enc_loop.c
+           3rdparty/base64/lib/arch/ssse3/enc_loop_asm.c
+           3rdparty/base64/lib/arch/ssse3/enc_reshuffle.c
+           3rdparty/base64/lib/arch/ssse3/enc_translate.c
+           3rdparty/base64/lib/codec_choose.c
+           3rdparty/base64/lib/codecs.h
+           3rdparty/base64/lib/env.h
+           3rdparty/base64/lib/exports.txt
+           3rdparty/base64/lib/lib.c
+           3rdparty/base64/lib/lib_openmp.c
+           3rdparty/base64/lib/tables/.gitignore
+           3rdparty/base64/lib/tables/Makefile
+           3rdparty/base64/lib/tables/table_dec_32bit.h
+           3rdparty/base64/lib/tables/table_enc_12bit.h
+           3rdparty/base64/lib/tables/table_enc_12bit.py
+           3rdparty/base64/lib/tables/tables.c
+           3rdparty/base64/lib/tables/tables.h
+           Brewfile
+           CHANGELOG.rst
+           CONTRIBUTING.md
+           INSTALL.md
+           Makefile
+           README.asciidoc
+           SECURITY.md
+           __main__.py
+           build-terminfo
+           build/compile_commands.json
+           build/fast_data_types-3rdparty-base64-lib-arch-avx-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-avx-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-avx2-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-avx2-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-avx512-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-avx512-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-generic-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-generic-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-neon32-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-neon32-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-neon64-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-neon64-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-sse41-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-sse41-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-sse42-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-sse42-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-arch-ssse3-codec.c.d
+           build/fast_data_types-3rdparty-base64-lib-arch-ssse3-codec.c.o
+           build/fast_data_types-3rdparty-base64-lib-codec_choose.c.d
+           build/fast_data_types-3rdparty-base64-lib-codec_choose.c.o
+           build/fast_data_types-3rdparty-base64-lib-lib.c.d
+           build/fast_data_types-3rdparty-base64-lib-lib.c.o
+           build/fast_data_types-3rdparty-base64-lib-tables-tables.c.d
+           build/fast_data_types-3rdparty-base64-lib-tables-tables.c.o
+           build/fast_data_types-3rdparty-ringbuf-ringbuf.c.d
+           build/fast_data_types-3rdparty-ringbuf-ringbuf.c.o
+           build/fast_data_types-kitty-animation.c.d
+           build/fast_data_types-kitty-animation.c.o
+           build/fast_data_types-kitty-charsets.c.d
+           build/fast_data_types-kitty-charsets.c.o
+           build/fast_data_types-kitty-child-monitor.c.d
+           build/fast_data_types-kitty-child-monitor.c.o
+           build/fast_data_types-kitty-child.c.d
+           build/fast_data_types-kitty-child.c.o
+           build/fast_data_types-kitty-cleanup.c.d
+           build/fast_data_types-kitty-cleanup.c.o
+           build/fast_data_types-kitty-colors.c.d
+           build/fast_data_types-kitty-colors.c.o
+           build/fast_data_types-kitty-crypto.c.d
+           build/fast_data_types-kitty-crypto.c.o
+           build/fast_data_types-kitty-cursor.c.d
+           build/fast_data_types-kitty-cursor.c.o
+           build/fast_data_types-kitty-data-types.c.d
+           build/fast_data_types-kitty-data-types.c.o
+           build/fast_data_types-kitty-desktop.c.d
+           build/fast_data_types-kitty-desktop.c.o
+           build/fast_data_types-kitty-disk-cache.c.d
+           build/fast_data_types-kitty-disk-cache.c.o
+           build/fast_data_types-kitty-fast-file-copy.c.d
+           build/fast_data_types-kitty-fast-file-copy.c.o
+           build/fast_data_types-kitty-font-names.c.d
+           build/fast_data_types-kitty-font-names.c.o
+           build/fast_data_types-kitty-fontconfig.c.d
+           build/fast_data_types-kitty-fontconfig.c.o
+           build/fast_data_types-kitty-fonts.c.d
+           build/fast_data_types-kitty-fonts.c.o
+           build/fast_data_types-kitty-freetype.c.d
+           build/fast_data_types-kitty-freetype.c.o
+           build/fast_data_types-kitty-freetype_render_ui_text.c.d
+           build/fast_data_types-kitty-freetype_render_ui_text.c.o
+           build/fast_data_types-kitty-gl-wrapper.c.d
+           build/fast_data_types-kitty-gl-wrapper.c.o
+           build/fast_data_types-kitty-gl.c.d
+           build/fast_data_types-kitty-gl.c.o
+           build/fast_data_types-kitty-glfw-wrapper.c.d
+           build/fast_data_types-kitty-glfw-wrapper.c.o
+           build/fast_data_types-kitty-glfw.c.d
+           build/fast_data_types-kitty-glfw.c.o
+           build/fast_data_types-kitty-glyph-cache.c.d
+           build/fast_data_types-kitty-glyph-cache.c.o
+           build/fast_data_types-kitty-graphics.c.d
+           build/fast_data_types-kitty-graphics.c.o
+           build/fast_data_types-kitty-history.c.d
+           build/fast_data_types-kitty-history.c.o
+           build/fast_data_types-kitty-hyperlink.c.d
+           build/fast_data_types-kitty-hyperlink.c.o
+           build/fast_data_types-kitty-key_encoding.c.d
+           build/fast_data_types-kitty-key_encoding.c.o
+           build/fast_data_types-kitty-keys.c.d
+           build/fast_data_types-kitty-keys.c.o
+           build/fast_data_types-kitty-kittens.c.d
+           build/fast_data_types-kitty-kittens.c.o
+           build/fast_data_types-kitty-line-buf.c.d
+           build/fast_data_types-kitty-line-buf.c.o
+           build/fast_data_types-kitty-line.c.d
+           build/fast_data_types-kitty-line.c.o
+           build/fast_data_types-kitty-logging.c.d
+           build/fast_data_types-kitty-logging.c.o
+           build/fast_data_types-kitty-loop-utils.c.d
+           build/fast_data_types-kitty-loop-utils.c.o
+           build/fast_data_types-kitty-monotonic.c.d
+           build/fast_data_types-kitty-monotonic.c.o
+           build/fast_data_types-kitty-mouse.c.d
+           build/fast_data_types-kitty-mouse.c.o
+           build/fast_data_types-kitty-png-reader.c.d
+           build/fast_data_types-kitty-png-reader.c.o
+           build/fast_data_types-kitty-rowcolumn-diacritics.c.d
+           build/fast_data_types-kitty-rowcolumn-diacritics.c.o
+           build/fast_data_types-kitty-screen.c.d
+           build/fast_data_types-kitty-screen.c.o
+           build/fast_data_types-kitty-shaders.c.d
+           build/fast_data_types-kitty-shaders.c.o
+           build/fast_data_types-kitty-shlex.c.d
+           build/fast_data_types-kitty-shlex.c.o
+           build/fast_data_types-kitty-simd-string-128.c.d
+           build/fast_data_types-kitty-simd-string-128.c.o
+           build/fast_data_types-kitty-simd-string-256.c.d
+           build/fast_data_types-kitty-simd-string-256.c.o
+           build/fast_data_types-kitty-simd-string.c.d
+           build/fast_data_types-kitty-simd-string.c.o
+           build/fast_data_types-kitty-state.c.d
+           build/fast_data_types-kitty-state.c.o
+           build/fast_data_types-kitty-systemd.c.d
+           build/fast_data_types-kitty-systemd.c.o
+           build/fast_data_types-kitty-unicode-data.c.d
+           build/fast_data_types-kitty-unicode-data.c.o
+           build/fast_data_types-kitty-utmp.c.d
+           build/fast_data_types-kitty-utmp.c.o
+           build/fast_data_types-kitty-vt-parser-dump.c.d
+           build/fast_data_types-kitty-vt-parser-dump.c.o
+           build/fast_data_types-kitty-vt-parser.c.d
+           build/fast_data_types-kitty-vt-parser.c.o
+           build/fast_data_types-kitty-wcswidth.c.d
+           build/fast_data_types-kitty-wcswidth.c.o
+           build/fast_data_types-kitty-window_logo.c.d
+           build/fast_data_types-kitty-window_logo.c.o
+           build/glfw-wayland-glfw-backend_utils.c.d
+           build/glfw-wayland-glfw-backend_utils.c.o
+           build/glfw-wayland-glfw-context.c.d
+           build/glfw-wayland-glfw-context.c.o
+           build/glfw-wayland-glfw-dbus_glfw.c.d
+           build/glfw-wayland-glfw-dbus_glfw.c.o
+           build/glfw-wayland-glfw-egl_context.c.d
+           build/glfw-wayland-glfw-egl_context.c.o
+           build/glfw-wayland-glfw-ibus_glfw.c.d
+           build/glfw-wayland-glfw-ibus_glfw.c.o
+           build/glfw-wayland-glfw-init.c.d
+           build/glfw-wayland-glfw-init.c.o
+           build/glfw-wayland-glfw-input.c.d
+           build/glfw-wayland-glfw-input.c.o
+           build/glfw-wayland-glfw-linux_desktop_settings.c.d
+           build/glfw-wayland-glfw-linux_desktop_settings.c.o
+           build/glfw-wayland-glfw-linux_joystick.c.d
+           build/glfw-wayland-glfw-linux_joystick.c.o
+           build/glfw-wayland-glfw-linux_notify.c.d
+           build/glfw-wayland-glfw-linux_notify.c.o
+           build/glfw-wayland-glfw-monitor.c.d
+           build/glfw-wayland-glfw-monitor.c.o
+           build/glfw-wayland-glfw-monotonic.c.d
+           build/glfw-wayland-glfw-monotonic.c.o
+           build/glfw-wayland-glfw-osmesa_context.c.d
+           build/glfw-wayland-glfw-osmesa_context.c.o
+           build/glfw-wayland-glfw-posix_thread.c.d
+           build/glfw-wayland-glfw-posix_thread.c.o
+           build/glfw-wayland-glfw-vulkan.c.d
+           build/glfw-wayland-glfw-vulkan.c.o
+           build/glfw-wayland-glfw-wayland-cursor-shape-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-cursor-shape-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-fractional-scale-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-fractional-scale-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-kwin-blur-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-kwin-blur-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-pointer-constraints-unstable-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-pointer-constraints-unstable-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-primary-selection-unstable-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-primary-selection-unstable-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-relative-pointer-unstable-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-relative-pointer-unstable-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-single-pixel-buffer-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-single-pixel-buffer-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-tablet-unstable-v2-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-tablet-unstable-v2-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-text-input-unstable-v3-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-text-input-unstable-v3-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-viewporter-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-viewporter-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-wlr-layer-shell-unstable-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-wlr-layer-shell-unstable-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-xdg-activation-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-xdg-activation-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-xdg-decoration-unstable-v1-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-xdg-decoration-unstable-v1-client-protocol.c.o
+           build/glfw-wayland-glfw-wayland-xdg-shell-client-protocol.c.d
+           build/glfw-wayland-glfw-wayland-xdg-shell-client-protocol.c.o
+           build/glfw-wayland-glfw-window.c.d
+           build/glfw-wayland-glfw-window.c.o
+           build/glfw-wayland-glfw-wl_client_side_decorations.c.d
+           build/glfw-wayland-glfw-wl_client_side_decorations.c.o
+           build/glfw-wayland-glfw-wl_cursors.c.d
+           build/glfw-wayland-glfw-wl_cursors.c.o
+           build/glfw-wayland-glfw-wl_init.c.d
+           build/glfw-wayland-glfw-wl_init.c.o
+           build/glfw-wayland-glfw-wl_monitor.c.d
+           build/glfw-wayland-glfw-wl_monitor.c.o
+           build/glfw-wayland-glfw-wl_text_input.c.d
+           build/glfw-wayland-glfw-wl_text_input.c.o
+           build/glfw-wayland-glfw-wl_window.c.d
+           build/glfw-wayland-glfw-wl_window.c.o
+           build/glfw-wayland-glfw-xkb_glfw.c.d
+           build/glfw-wayland-glfw-xkb_glfw.c.o
+           build/glfw-x11-glfw-backend_utils.c.d
+           build/glfw-x11-glfw-backend_utils.c.o
+           build/glfw-x11-glfw-context.c.d
+           build/glfw-x11-glfw-context.c.o
+           build/glfw-x11-glfw-dbus_glfw.c.d
+           build/glfw-x11-glfw-dbus_glfw.c.o
+           build/glfw-x11-glfw-egl_context.c.d
+           build/glfw-x11-glfw-egl_context.c.o
+           build/glfw-x11-glfw-glx_context.c.d
+           build/glfw-x11-glfw-glx_context.c.o
+           build/glfw-x11-glfw-ibus_glfw.c.d
+           build/glfw-x11-glfw-ibus_glfw.c.o
+           build/glfw-x11-glfw-init.c.d
+           build/glfw-x11-glfw-init.c.o
+           build/glfw-x11-glfw-input.c.d
+           build/glfw-x11-glfw-input.c.o
+           build/glfw-x11-glfw-linux_joystick.c.d
+           build/glfw-x11-glfw-linux_joystick.c.o
+           build/glfw-x11-glfw-linux_notify.c.d
+           build/glfw-x11-glfw-linux_notify.c.o
+           build/glfw-x11-glfw-monitor.c.d
+           build/glfw-x11-glfw-monitor.c.o
+           build/glfw-x11-glfw-monotonic.c.d
+           build/glfw-x11-glfw-monotonic.c.o
+           build/glfw-x11-glfw-osmesa_context.c.d
+           build/glfw-x11-glfw-osmesa_context.c.o
+           build/glfw-x11-glfw-posix_thread.c.d
+           build/glfw-x11-glfw-posix_thread.c.o
+           build/glfw-x11-glfw-vulkan.c.d
+           build/glfw-x11-glfw-vulkan.c.o
+           build/glfw-x11-glfw-window.c.d
+           build/glfw-x11-glfw-window.c.o
+           build/glfw-x11-glfw-x11_init.c.d
+           build/glfw-x11-glfw-x11_init.c.o
+           build/glfw-x11-glfw-x11_monitor.c.d
+           build/glfw-x11-glfw-x11_monitor.c.o
+           build/glfw-x11-glfw-x11_window.c.d
+           build/glfw-x11-glfw-x11_window.c.o
+           build/glfw-x11-glfw-xkb_glfw.c.d
+           build/glfw-x11-glfw-xkb_glfw.c.o
+           build/kitty-launcher-main.o
+           build/kitty-launcher-single-instance.o
+           build/link_commands.json
+           build/rsync-kittens-transfer-algorithm.c.d
+           build/rsync-kittens-transfer-algorithm.c.o
+           bypy/devenv.go
+           bypy/init_env.py
+           bypy/linux.conf
+           bypy/linux/__main__.py
+           bypy/macos.conf
+           bypy/macos/__main__.py
+           bypy/rsync.conf
+           bypy/site.py
+           bypy/sources.json
+           constants_generated.go
+           count-lines-of-code
+           docs/Makefile
+           docs/_build/doctrees/actions.doctree
+           docs/_build/doctrees/binary.doctree
+           docs/_build/doctrees/build.doctree
+           docs/_build/doctrees/changelog.doctree
+           docs/_build/doctrees/clipboard.doctree
+           docs/_build/doctrees/color-stack.doctree
+           docs/_build/doctrees/conf.doctree
+           docs/_build/doctrees/deccara.doctree
+           docs/_build/doctrees/desktop-notifications.doctree
+           docs/_build/doctrees/environment.pickle
+           docs/_build/doctrees/faq.doctree
+           docs/_build/doctrees/file-transfer-protocol.doctree
+           docs/_build/doctrees/generated/color-names.doctree
+           docs/_build/doctrees/generated/launch.doctree
+           docs/_build/doctrees/generated/matching.doctree
+           docs/_build/doctrees/generated/rc.doctree
+           docs/_build/doctrees/generated/ssh-copy.doctree
+           docs/_build/doctrees/glossary.doctree
+           docs/_build/doctrees/graphics-protocol.doctree
+           docs/_build/doctrees/index.doctree
+           docs/_build/doctrees/integrations.doctree
+           docs/_build/doctrees/intro_vid.doctree
+           docs/_build/doctrees/invocation.doctree
+           docs/_build/doctrees/keyboard-protocol.doctree
+           docs/_build/doctrees/kittens/broadcast.doctree
+           docs/_build/doctrees/kittens/choose-fonts.doctree
+           docs/_build/doctrees/kittens/clipboard.doctree
+           docs/_build/doctrees/kittens/custom.doctree
+           docs/_build/doctrees/kittens/diff.doctree
+           docs/_build/doctrees/kittens/hints.doctree
+           docs/_build/doctrees/kittens/hyperlinked_grep.doctree
+           docs/_build/doctrees/kittens/icat.doctree
+           docs/_build/doctrees/kittens/panel.doctree
+           docs/_build/doctrees/kittens/query_terminal.doctree
+           docs/_build/doctrees/kittens/remote_file.doctree
+           docs/_build/doctrees/kittens/ssh.doctree
+           docs/_build/doctrees/kittens/themes.doctree
+           docs/_build/doctrees/kittens/transfer.doctree
+           docs/_build/doctrees/kittens/unicode_input.doctree
+           docs/_build/doctrees/kittens_intro.doctree
+           docs/_build/doctrees/launch.doctree
+           docs/_build/doctrees/layouts.doctree
+           docs/_build/doctrees/mapping.doctree
+           docs/_build/doctrees/marks.doctree
+           docs/_build/doctrees/open_actions.doctree
+           docs/_build/doctrees/overview.doctree
+           docs/_build/doctrees/performance.doctree
+           docs/_build/doctrees/pipe.doctree
+           docs/_build/doctrees/pointer-shapes.doctree
+           docs/_build/doctrees/press-mentions.doctree
+           docs/_build/doctrees/protocol-extensions.doctree
+           docs/_build/doctrees/quickstart.doctree
+           docs/_build/doctrees/rc_protocol.doctree
+           docs/_build/doctrees/remote-control.doctree
+           docs/_build/doctrees/shell-integration.doctree
+           docs/_build/doctrees/support.doctree
+           docs/_build/doctrees/underlines.doctree
+           docs/_build/doctrees/unscroll.doctree
+           docs/_build/man/kitten-@-action.1
+           docs/_build/man/kitten-@-close-tab.1
+           docs/_build/man/kitten-@-close-window.1
+           docs/_build/man/kitten-@-create-marker.1
+           docs/_build/man/kitten-@-detach-tab.1
+           docs/_build/man/kitten-@-detach-window.1
+           docs/_build/man/kitten-@-disable-ligatures.1
+           docs/_build/man/kitten-@-env.1
+           docs/_build/man/kitten-@-focus-tab.1
+           docs/_build/man/kitten-@-focus-window.1
+           docs/_build/man/kitten-@-get-colors.1
+           docs/_build/man/kitten-@-get-text.1
+           docs/_build/man/kitten-@-goto-layout.1
+           docs/_build/man/kitten-@-kitten.1
+           docs/_build/man/kitten-@-last-used-layout.1
+           docs/_build/man/kitten-@-launch.1
+           docs/_build/man/kitten-@-load-config.1
+           docs/_build/man/kitten-@-ls.1
+           docs/_build/man/kitten-@-new-window.1
+           docs/_build/man/kitten-@-remove-marker.1
+           docs/_build/man/kitten-@-resize-os-window.1
+           docs/_build/man/kitten-@-resize-window.1
+           docs/_build/man/kitten-@-run.1
+           docs/_build/man/kitten-@-scroll-window.1
+           docs/_build/man/kitten-@-select-window.1
+           docs/_build/man/kitten-@-send-key.1
+           docs/_build/man/kitten-@-send-text.1
+           docs/_build/man/kitten-@-set-background-image.1
+           docs/_build/man/kitten-@-set-background-opacity.1
+           docs/_build/man/kitten-@-set-colors.1
+           docs/_build/man/kitten-@-set-enabled-layouts.1
+           docs/_build/man/kitten-@-set-font-size.1
+           docs/_build/man/kitten-@-set-spacing.1
+           docs/_build/man/kitten-@-set-tab-color.1
+           docs/_build/man/kitten-@-set-tab-title.1
+           docs/_build/man/kitten-@-set-user-vars.1
+           docs/_build/man/kitten-@-set-window-logo.1
+           docs/_build/man/kitten-@-set-window-title.1
+           docs/_build/man/kitten-@-signal-child.1
+           docs/_build/man/kitten-@.1
+           docs/_build/man/kitten-ask.1
+           docs/_build/man/kitten-broadcast.1
+           docs/_build/man/kitten-choose-fonts.1
+           docs/_build/man/kitten-choose_fonts.1
+           docs/_build/man/kitten-clipboard.1
+           docs/_build/man/kitten-diff.1
+           docs/_build/man/kitten-edit-in-kitty.1
+           docs/_build/man/kitten-hints.1
+           docs/_build/man/kitten-hyperlinked-grep.1
+           docs/_build/man/kitten-icat.1
+           docs/_build/man/kitten-mouse-demo.1
+           docs/_build/man/kitten-notify.1
+           docs/_build/man/kitten-panel.1
+           docs/_build/man/kitten-query-terminal.1
+           docs/_build/man/kitten-remote-file.1
+           docs/_build/man/kitten-run-shell.1
+           docs/_build/man/kitten-show-key.1
+           docs/_build/man/kitten-ssh.1
+           docs/_build/man/kitten-themes.1
+           docs/_build/man/kitten-transfer.1
+           docs/_build/man/kitten-unicode-input.1
+           docs/_build/man/kitten-update-self.1
+           docs/_build/man/kitten.1
+           docs/_build/man/kitty.1
+           docs/_build/man/kitty.conf.5
+           docs/_static/poster.png
+           docs/_static/timestamps.css
+           docs/_static/timestamps.js
+           docs/_templates/base.html
+           docs/actions.rst
+           docs/basic.rst
+           docs/binary.rst
+           docs/build.rst
+           docs/changelog.rst
+           docs/clipboard.rst
+           docs/color-stack.rst
+           docs/conf.py
+           docs/conf.rst
+           docs/deccara.rst
+           docs/desktop-notifications.rst
+           docs/extract-rst-targets.py
+           docs/faq.rst
+           docs/file-transfer-protocol.rst
+           docs/generated/actions.rst
+           docs/generated/cli-kitten-ask.rst
+           docs/generated/cli-kitten-at.rst
+           docs/generated/cli-kitten-broadcast.rst
+           docs/generated/cli-kitten-clipboard.rst
+           docs/generated/cli-kitten-diff.rst
+           docs/generated/cli-kitten-hints.rst
+           docs/generated/cli-kitten-icat.rst
+           docs/generated/cli-kitten-notify.rst
+           docs/generated/cli-kitten-pager.rst
+           docs/generated/cli-kitten-panel.rst
+           docs/generated/cli-kitten-query_terminal.rst
+           docs/generated/cli-kitten-show_key.rst
+           docs/generated/cli-kitten-themes.rst
+           docs/generated/cli-kitten-transfer.rst
+           docs/generated/cli-kitten-unicode_input.rst
+           docs/generated/cli-kitty.rst
+           docs/generated/color-names.rst
+           docs/generated/conf-kitten-diff.rst
+           docs/generated/conf-kitten-ssh.rst
+           docs/generated/conf-kitty.rst
+           docs/generated/conf/diff.conf
+           docs/generated/conf/kitty.conf
+           docs/generated/conf/ssh.conf
+           docs/generated/launch.rst
+           docs/generated/matching.rst
+           docs/generated/rc.rst
+           docs/generated/ssh-copy.rst
+           docs/glossary.rst
+           docs/graphics-protocol.rst
+           docs/index.rst
+           docs/integrations.rst
+           docs/intro_vid.rst
+           docs/invocation.rst
+           docs/keyboard-protocol.rst
+           docs/kittens/broadcast.rst
+           docs/kittens/choose-fonts.rst
+           docs/kittens/clipboard.rst
+           docs/kittens/custom.rst
+           docs/kittens/diff.rst
+           docs/kittens/hints.rst
+           docs/kittens/hyperlinked_grep.rst
+           docs/kittens/icat.rst
+           docs/kittens/panel.rst
+           docs/kittens/query_terminal.rst
+           docs/kittens/remote_file.rst
+           docs/kittens/ssh.rst
+           docs/kittens/themes.rst
+           docs/kittens/transfer.rst
+           docs/kittens/unicode_input.rst
+           docs/kittens_intro.rst
+           docs/launch.rst
+           docs/layouts.rst
+           docs/mapping.rst
+           docs/marks.rst
+           docs/notifications.py
+           docs/open_actions.rst
+           docs/overview.rst
+           docs/performance.rst
+           docs/pipe.rst
+           docs/pointer-shapes.rst
+           docs/press-mentions.rst
+           docs/protocol-extensions.rst
+           docs/quickstart.rst
+           docs/rc_protocol.rst
+           docs/remote-control.rst
+           docs/requirements.txt
+           docs/screenshots/diff.png
+           docs/screenshots/family-selection.png
+           docs/screenshots/font-fine-tune.png
+           docs/screenshots/hints_mode.png
+           docs/screenshots/panel.png
+           docs/screenshots/remote_file.png
+           docs/screenshots/screenshot.png
+           docs/screenshots/select-window.png
+           docs/screenshots/splits.png
+           docs/screenshots/themes.png
+           docs/screenshots/transfer.png
+           docs/screenshots/unicode.png
+           docs/screenshots/window-logo.png
+           docs/shell-integration.rst
+           docs/support.rst
+           docs/underlines.rst
+           docs/unscroll.rst
+           gen/README.rst
+           gen/__init__.py
+           gen/__main__.py
+           gen/__pycache__/__init__.cpython-312.opt-2.pyc
+           gen/__pycache__/__main__.cpython-312.opt-2.pyc
+           gen/__pycache__/go_code.cpython-312.opt-2.pyc
+           gen/apc_parsers.py
+           gen/config.py
+           gen/cursors.py
+           gen/go_code.py
+           gen/key_constants.py
+           gen/nerd-fonts-glyphs.txt
+           gen/rowcolumn-diacritics.txt
+           gen/srgb_lut.py
+           gen/wcwidth.py
+           glad/generate.py
+           glfw/__init__.py
+           glfw/__pycache__/__init__.cpython-312.pyc
+           glfw/__pycache__/glfw.cpython-312.pyc
+           glfw/glfw.py
+           glfw/source-info.json
+           glfw/wayland-kwin-blur-v1-client-protocol.c
+           glfw/wayland-kwin-blur-v1-client-protocol.h
+           glfw/wl_cursors.c
+           glfw/wl_cursors.h
+           go.mod
+           go.sum
+           key_encoding.json
+           kittens/__init__.py
+           kittens/__pycache__/__init__.cpython-312.pyc
+           kittens/__pycache__/runner.cpython-312.pyc
+           kittens/ask/__init__.py
+           kittens/ask/__pycache__/__init__.cpython-312.pyc
+           kittens/ask/__pycache__/main.cpython-312.pyc
+           kittens/ask/choices.go
+           kittens/ask/cli_generated.go
+           kittens/ask/get_line.go
+           kittens/ask/main.go
+           kittens/ask/main.py
+           kittens/broadcast/__init__.py
+           kittens/broadcast/__pycache__/__init__.cpython-312.pyc
+           kittens/broadcast/__pycache__/main.cpython-312.pyc
+           kittens/broadcast/main.py
+           kittens/choose_fonts/__init__.py
+           kittens/choose_fonts/__pycache__/__init__.cpython-312.pyc
+           kittens/choose_fonts/__pycache__/main.cpython-312.pyc
+           kittens/choose_fonts/backend.go
+           kittens/choose_fonts/backend.py
+           kittens/choose_fonts/face.go
+           kittens/choose_fonts/faces.go
+           kittens/choose_fonts/family_list.go
+           kittens/choose_fonts/final.go
+           kittens/choose_fonts/graphics.go
+           kittens/choose_fonts/index_feature.go
+           kittens/choose_fonts/list.go
+           kittens/choose_fonts/main.go
+           kittens/choose_fonts/main.py
+           kittens/choose_fonts/styles.go
+           kittens/choose_fonts/types.go
+           kittens/choose_fonts/ui.go
+           kittens/clipboard/__init__.py
+           kittens/clipboard/__pycache__/__init__.cpython-312.pyc
+           kittens/clipboard/__pycache__/main.cpython-312.pyc
+           kittens/clipboard/cli_generated.go
+           kittens/clipboard/legacy.go
+           kittens/clipboard/main.go
+           kittens/clipboard/main.py
+           kittens/clipboard/read.go
+           kittens/clipboard/write.go
+           kittens/diff/__init__.py
+           kittens/diff/__pycache__/__init__.cpython-312.pyc
+           kittens/diff/__pycache__/main.cpython-312.pyc
+           kittens/diff/cli_generated.go
+           kittens/diff/collect.go
+           kittens/diff/collect_test.go
+           kittens/diff/conf_generated.go
+           kittens/diff/highlight.go
+           kittens/diff/main.go
+           kittens/diff/main.py
+           kittens/diff/mouse.go
+           kittens/diff/patch.go
+           kittens/diff/render.go
+           kittens/diff/search.go
+           kittens/diff/ui.go
+           kittens/hints/__init__.py
+           kittens/hints/__pycache__/__init__.cpython-312.pyc
+           kittens/hints/__pycache__/main.cpython-312.pyc
+           kittens/hints/cli_generated.go
+           kittens/hints/main.go
+           kittens/hints/main.py
+           kittens/hints/marks.go
+           kittens/hints/marks_test.go
+           kittens/hyperlinked_grep/__init__.py
+           kittens/hyperlinked_grep/__pycache__/__init__.cpython-312.pyc
+           kittens/hyperlinked_grep/__pycache__/main.cpython-312.pyc
+           kittens/hyperlinked_grep/main.go
+           kittens/hyperlinked_grep/main.py
+           kittens/hyperlinked_grep/main_test.go
+           kittens/icat/__init__.py
+           kittens/icat/__pycache__/__init__.cpython-312.pyc
+           kittens/icat/__pycache__/main.cpython-312.pyc
+           kittens/icat/cli_generated.go
+           kittens/icat/detect.go
+           kittens/icat/magick.go
+           kittens/icat/main.go
+           kittens/icat/main.py
+           kittens/icat/native.go
+           kittens/icat/process_images.go
+           kittens/icat/transmit.go
+           kittens/notify/__init__.py
+           kittens/notify/__pycache__/__init__.cpython-312.pyc
+           kittens/notify/__pycache__/main.cpython-312.pyc
+           kittens/notify/cli_generated.go
+           kittens/notify/main.go
+           kittens/notify/main.py
+           kittens/pager/__init__.py
+           kittens/pager/__pycache__/__init__.cpython-312.pyc
+           kittens/pager/__pycache__/main.cpython-312.pyc
+           kittens/pager/cli_generated.go
+           kittens/pager/file_input.go
+           kittens/pager/main.go
+           kittens/pager/main.py
+           kittens/panel/__init__.py
+           kittens/panel/__pycache__/__init__.cpython-312.pyc
+           kittens/panel/__pycache__/main.cpython-312.pyc
+           kittens/panel/main.py
+           kittens/query_terminal/__init__.py
+           kittens/query_terminal/__pycache__/__init__.cpython-312.pyc
+           kittens/query_terminal/__pycache__/main.cpython-312.pyc
+           kittens/query_terminal/cli_generated.go
+           kittens/query_terminal/main.go
+           kittens/query_terminal/main.py
+           kittens/remote_file/__init__.py
+           kittens/remote_file/__pycache__/__init__.cpython-312.pyc
+           kittens/remote_file/__pycache__/main.cpython-312.pyc
+           kittens/remote_file/main.py
+           kittens/resize_window/__init__.py
+           kittens/resize_window/__pycache__/__init__.cpython-312.pyc
+           kittens/resize_window/__pycache__/main.cpython-312.pyc
+           kittens/resize_window/main.py
+           kittens/runner.py
+           kittens/show_key/__init__.py
+           kittens/show_key/__pycache__/__init__.cpython-312.pyc
+           kittens/show_key/__pycache__/main.cpython-312.pyc
+           kittens/show_key/cli_generated.go
+           kittens/show_key/kitty.go
+           kittens/show_key/legacy.go
+           kittens/show_key/main.go
+           kittens/show_key/main.py
+           kittens/ssh/__init__.py
+           kittens/ssh/__pycache__/__init__.cpython-312.pyc
+           kittens/ssh/__pycache__/main.cpython-312.pyc
+           kittens/ssh/askpass.go
+           kittens/ssh/cli_generated.go
+           kittens/ssh/conf_generated.go
+           kittens/ssh/config.go
+           kittens/ssh/config_test.go
+           kittens/ssh/copy_cli_generated.go
+           kittens/ssh/main.go
+           kittens/ssh/main.py
+           kittens/ssh/main_test.go
+           kittens/ssh/utils.go
+           kittens/ssh/utils.py
+           kittens/ssh/utils_test.go
+           kittens/themes/__init__.py
+           kittens/themes/__pycache__/__init__.cpython-312.pyc
+           kittens/themes/__pycache__/main.cpython-312.pyc
+           kittens/themes/cli_generated.go
+           kittens/themes/list.go
+           kittens/themes/main.go
+           kittens/themes/main.py
+           kittens/themes/ui.go
+           kittens/transfer/__init__.py
+           kittens/transfer/__pycache__/__init__.cpython-312.pyc
+           kittens/transfer/__pycache__/main.cpython-312.pyc
+           kittens/transfer/cli_generated.go
+           kittens/transfer/ftc.go
+           kittens/transfer/ftc_stringer_generated.go
+           kittens/transfer/ftc_test.go
+           kittens/transfer/main.go
+           kittens/transfer/main.py
+           kittens/transfer/receive.go
+           kittens/transfer/rsync.pyi
+           kittens/transfer/rsync.so
+           kittens/transfer/send.go
+           kittens/transfer/send_test.go
+           kittens/transfer/utils.go
+           kittens/transfer/utils.py
+           kittens/tui/__init__.py
+           kittens/tui/__pycache__/__init__.cpython-312.pyc
+           kittens/tui/__pycache__/handler.cpython-312.pyc
+           kittens/tui/__pycache__/line_edit.cpython-312.pyc
+           kittens/tui/__pycache__/loop.cpython-312.pyc
+           kittens/tui/__pycache__/operations.cpython-312.pyc
+           kittens/tui/__pycache__/operations_stub.cpython-312.pyc
+           kittens/tui/__pycache__/utils.cpython-312.pyc
+           kittens/tui/dircolors.py
+           kittens/tui/handler.py
+           kittens/tui/images.py
+           kittens/tui/line_edit.py
+           kittens/tui/loop.py
+           kittens/tui/operations.py
+           kittens/tui/operations_stub.py
+           kittens/tui/path_completer.py
+           kittens/tui/progress.py
+           kittens/tui/spinners.py
+           kittens/tui/utils.py
+           kittens/unicode_input/__init__.py
+           kittens/unicode_input/__pycache__/__init__.cpython-312.pyc
+           kittens/unicode_input/__pycache__/main.cpython-312.pyc
+           kittens/unicode_input/cli_generated.go
+           kittens/unicode_input/main.go
+           kittens/unicode_input/main.py
+           kittens/unicode_input/table.go
+           kitty/__init__.py
+           kitty/__pycache__/__init__.cpython-312.pyc
+           kitty/__pycache__/actions.cpython-312.pyc
+           kitty/__pycache__/borders.cpython-312.pyc
+           kitty/__pycache__/boss.cpython-312.pyc
+           kitty/__pycache__/child.cpython-312.pyc
+           kitty/__pycache__/cli.cpython-312.pyc
+           kitty/__pycache__/cli_stub.cpython-312.pyc
+           kitty/__pycache__/clipboard.cpython-312.pyc
+           kitty/__pycache__/config.cpython-312.pyc
+           kitty/__pycache__/constants.cpython-312.pyc
+           kitty/__pycache__/key_encoding.cpython-312.pyc
+           kitty/__pycache__/key_names.cpython-312.pyc
+           kitty/__pycache__/keys.cpython-312.pyc
+           kitty/__pycache__/launch.cpython-312.pyc
+           kitty/__pycache__/notifications.cpython-312.pyc
+           kitty/__pycache__/os_window_size.cpython-312.pyc
+           kitty/__pycache__/remote_control.cpython-312.pyc
+           kitty/__pycache__/rgb.cpython-312.pyc
+           kitty/__pycache__/session.cpython-312.pyc
+           kitty/__pycache__/shaders.cpython-312.pyc
+           kitty/__pycache__/short_uuid.cpython-312.pyc
+           kitty/__pycache__/tab_bar.cpython-312.pyc
+           kitty/__pycache__/tabs.cpython-312.pyc
+           kitty/__pycache__/terminfo.cpython-312.pyc
+           kitty/__pycache__/types.cpython-312.pyc
+           kitty/__pycache__/typing.cpython-312.pyc
+           kitty/__pycache__/utils.cpython-312.pyc
+           kitty/__pycache__/window.cpython-312.pyc
+           kitty/__pycache__/window_list.cpython-312.pyc
+           kitty/actions.py
+           kitty/alpha_blend.glsl
+           kitty/bash.py
+           kitty/bgimage_fragment.glsl
+           kitty/bgimage_vertex.glsl
+           kitty/border_fragment.glsl
+           kitty/border_vertex.glsl
+           kitty/borders.py
+           kitty/boss.py
+           kitty/cell_defines.glsl
+           kitty/cell_fragment.glsl
+           kitty/cell_vertex.glsl
+           kitty/child.py
+           kitty/choose_entry.py
+           kitty/cli.py
+           kitty/cli_stub.py
+           kitty/client.py
+           kitty/clipboard.py
+           kitty/conf/__init__.py
+           kitty/conf/__pycache__/__init__.cpython-312.pyc
+           kitty/conf/__pycache__/types.cpython-312.pyc
+           kitty/conf/__pycache__/utils.cpython-312.pyc
+           kitty/conf/generate.py
+           kitty/conf/types.py
+           kitty/conf/utils.py
+           kitty/config.py
+           kitty/constants.py
+           kitty/debug_config.py
+           kitty/docs_ref_map_generated.h
+           kitty/emoji.h
+           kitty/entry_points.py
+           kitty/fast_data_types.pyi
+           kitty/file_transmission.py
+           kitty/fonts/__init__.py
+           kitty/fonts/__pycache__/__init__.cpython-312.pyc
+           kitty/fonts/box_drawing.py
+           kitty/fonts/common.py
+           kitty/fonts/core_text.py
+           kitty/fonts/features.py
+           kitty/fonts/fontconfig.py
+           kitty/fonts/list.py
+           kitty/fonts/render.py
+           kitty/gl-wrapper.c
+           kitty/glfw-wayland.so
+           kitty/glfw-wrapper.c
+           kitty/glfw-wrapper.h
+           kitty/glfw-x11.so
+           kitty/graphics_fragment.glsl
+           kitty/graphics_vertex.glsl
+           kitty/guess_mime_type.py
+           kitty/key_encoding.py
+           kitty/key_names.py
+           kitty/keys.py
+           kitty/launch.py
+           kitty/layout/__init__.py
+           kitty/layout/__pycache__/__init__.cpython-312.pyc
+           kitty/layout/__pycache__/base.cpython-312.pyc
+           kitty/layout/__pycache__/grid.cpython-312.pyc
+           kitty/layout/__pycache__/interface.cpython-312.pyc
+           kitty/layout/__pycache__/splits.cpython-312.pyc
+           kitty/layout/__pycache__/stack.cpython-312.pyc
+           kitty/layout/__pycache__/tall.cpython-312.pyc
+           kitty/layout/__pycache__/vertical.cpython-312.pyc
+           kitty/layout/base.py
+           kitty/layout/grid.py
+           kitty/layout/interface.py
+           kitty/layout/splits.py
+           kitty/layout/stack.py
+           kitty/layout/tall.py
+           kitty/layout/vertical.py
+           kitty/linear2srgb.glsl
+           kitty/main.py
+           kitty/marks.py
+           kitty/multiprocessing.py
+           kitty/notifications.py
+           kitty/open_actions.py
+           kitty/options/__init__.py
+           kitty/options/__pycache__/__init__.cpython-312.pyc
+           kitty/options/__pycache__/definition.cpython-312.pyc
+           kitty/options/__pycache__/types.cpython-312.pyc
+           kitty/options/__pycache__/utils.cpython-312.pyc
+           kitty/options/definition.py
+           kitty/options/parse.py
+           kitty/options/to-c-generated.h
+           kitty/options/types.py
+           kitty/options/utils.py
+           kitty/os_window_size.py
+           kitty/parse-graphics-command.h
+           kitty/rc/__init__.py
+           kitty/rc/__pycache__/__init__.cpython-312.pyc
+           kitty/rc/__pycache__/action.cpython-312.pyc
+           kitty/rc/__pycache__/base.cpython-312.pyc
+           kitty/rc/__pycache__/close_tab.cpython-312.pyc
+           kitty/rc/__pycache__/close_window.cpython-312.pyc
+           kitty/rc/__pycache__/create_marker.cpython-312.pyc
+           kitty/rc/__pycache__/detach_tab.cpython-312.pyc
+           kitty/rc/__pycache__/detach_window.cpython-312.pyc
+           kitty/rc/__pycache__/disable_ligatures.cpython-312.pyc
+           kitty/rc/__pycache__/env.cpython-312.pyc
+           kitty/rc/__pycache__/focus_tab.cpython-312.pyc
+           kitty/rc/__pycache__/focus_window.cpython-312.pyc
+           kitty/rc/__pycache__/get_colors.cpython-312.pyc
+           kitty/rc/__pycache__/get_text.cpython-312.pyc
+           kitty/rc/__pycache__/goto_layout.cpython-312.pyc
+           kitty/rc/__pycache__/kitten.cpython-312.pyc
+           kitty/rc/__pycache__/last_used_layout.cpython-312.pyc
+           kitty/rc/__pycache__/launch.cpython-312.pyc
+           kitty/rc/__pycache__/load_config.cpython-312.pyc
+           kitty/rc/__pycache__/ls.cpython-312.pyc
+           kitty/rc/__pycache__/new_window.cpython-312.pyc
+           kitty/rc/__pycache__/remove_marker.cpython-312.pyc
+           kitty/rc/__pycache__/resize_os_window.cpython-312.pyc
+           kitty/rc/__pycache__/resize_window.cpython-312.pyc
+           kitty/rc/__pycache__/run.cpython-312.pyc
+           kitty/rc/__pycache__/scroll_window.cpython-312.pyc
+           kitty/rc/__pycache__/select_window.cpython-312.pyc
+           kitty/rc/__pycache__/send_key.cpython-312.pyc
+           kitty/rc/__pycache__/send_text.cpython-312.pyc
+           kitty/rc/__pycache__/set_background_image.cpython-312.pyc
+           kitty/rc/__pycache__/set_background_opacity.cpython-312.pyc
+           kitty/rc/__pycache__/set_colors.cpython-312.pyc
+           kitty/rc/__pycache__/set_enabled_layouts.cpython-312.pyc
+           kitty/rc/__pycache__/set_font_size.cpython-312.pyc
+           kitty/rc/__pycache__/set_spacing.cpython-312.pyc
+           kitty/rc/__pycache__/set_tab_color.cpython-312.pyc
+           kitty/rc/__pycache__/set_tab_title.cpython-312.pyc
+           kitty/rc/__pycache__/set_user_vars.cpython-312.pyc
+           kitty/rc/__pycache__/set_window_logo.cpython-312.pyc
+           kitty/rc/__pycache__/set_window_title.cpython-312.pyc
+           kitty/rc/__pycache__/signal_child.cpython-312.pyc
+           kitty/rc/action.py
+           kitty/rc/base.py
+           kitty/rc/close_tab.py
+           kitty/rc/close_window.py
+           kitty/rc/create_marker.py
+           kitty/rc/detach_tab.py
+           kitty/rc/detach_window.py
+           kitty/rc/disable_ligatures.py
+           kitty/rc/env.py
+           kitty/rc/focus_tab.py
+           kitty/rc/focus_window.py
+           kitty/rc/get_colors.py
+           kitty/rc/get_text.py
+           kitty/rc/goto_layout.py
+           kitty/rc/kitten.py
+           kitty/rc/last_used_layout.py
+           kitty/rc/launch.py
+           kitty/rc/load_config.py
+           kitty/rc/ls.py
+           kitty/rc/new_window.py
+           kitty/rc/remove_marker.py
+           kitty/rc/resize_os_window.py
+           kitty/rc/resize_window.py
+           kitty/rc/run.py
+           kitty/rc/scroll_window.py
+           kitty/rc/select_window.py
+           kitty/rc/send_key.py
+           kitty/rc/send_text.py
+           kitty/rc/set_background_image.py
+           kitty/rc/set_background_opacity.py
+           kitty/rc/set_colors.py
+           kitty/rc/set_enabled_layouts.py
+           kitty/rc/set_font_size.py
+           kitty/rc/set_spacing.py
+           kitty/rc/set_tab_color.py
+           kitty/rc/set_tab_title.py
+           kitty/rc/set_user_vars.py
+           kitty/rc/set_window_logo.py
+           kitty/rc/set_window_title.py
+           kitty/rc/signal_child.py
+           kitty/remote_control.py
+           kitty/render_cache.py
+           kitty/rgb.py
+           kitty/rowcolumn-diacritics.c
+           kitty/search_query_parser.py
+           kitty/session.py
+           kitty/shaders.py
+           kitty/shell_integration.py
+           kitty/shm.py
+           kitty/short_uuid.py
+           kitty/srgb_gamma.h
+           kitty/tab_bar.py
+           kitty/tabs.py
+           kitty/terminfo.h
+           kitty/terminfo.py
+           kitty/tint_fragment.glsl
+           kitty/tint_vertex.glsl
+           kitty/types.py
+           kitty/typing.py
+           kitty/typing.pyi
+           kitty/unicode-data.c
+           kitty/unicode-data.h
+           kitty/uniforms_generated.h
+           kitty/update_check.py
+           kitty/utils.py
+           kitty/utmp.c
+           kitty/wcwidth-std.h
+           kitty/window.py
+           kitty/window_list.py
+           kitty/xdg.py
+           kitty_tests/CascadiaCode-Regular.otf
+           kitty_tests/FiraCode-Medium.otf
+           kitty_tests/LiberationMono-Regular.ttf
+           kitty_tests/__init__.py
+           kitty_tests/check_build.py
+           kitty_tests/clipboard.py
+           kitty_tests/completion.py
+           kitty_tests/crypto.py
+           kitty_tests/datatypes.py
+           kitty_tests/file_transmission.py
+           kitty_tests/fonts.py
+           kitty_tests/glfw.py
+           kitty_tests/gr.py
+           kitty_tests/graphics.py
+           kitty_tests/keys.py
+           kitty_tests/layout.py
+           kitty_tests/main.py
+           kitty_tests/mouse.py
+           kitty_tests/notifications.py
+           kitty_tests/open_actions.py
+           kitty_tests/options.py
+           kitty_tests/parser.py
+           kitty_tests/screen.py
+           kitty_tests/search_query_parser.py
+           kitty_tests/shell_integration.py
+           kitty_tests/shm.py
+           kitty_tests/ssh.py
+           kitty_tests/tui.py
+           kitty_tests/utmp.py
+           linux-package/bin/kitty
+           linux-package/lib/kitty/__main__.py
+           linux-package/lib/kitty/__pycache__/__main__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/__pycache__/__main__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/__pycache__/__main__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/__init__.py
+           linux-package/lib/kitty/kittens/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/__pycache__/runner.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/__pycache__/runner.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/__pycache__/runner.cpython-312.pyc
+           linux-package/lib/kitty/kittens/ask/__init__.py
+           linux-package/lib/kitty/kittens/ask/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/ask/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/ask/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/ask/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/ask/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/ask/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/ask/main.py
+           linux-package/lib/kitty/kittens/broadcast/__init__.py
+           linux-package/lib/kitty/kittens/broadcast/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/broadcast/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/broadcast/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/broadcast/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/broadcast/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/broadcast/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/broadcast/main.py
+           linux-package/lib/kitty/kittens/choose_fonts/__init__.py
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/backend.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/backend.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/backend.cpython-312.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/choose_fonts/backend.py
+           linux-package/lib/kitty/kittens/choose_fonts/main.py
+           linux-package/lib/kitty/kittens/clipboard/__init__.py
+           linux-package/lib/kitty/kittens/clipboard/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/clipboard/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/clipboard/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/clipboard/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/clipboard/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/clipboard/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/clipboard/main.py
+           linux-package/lib/kitty/kittens/diff/__init__.py
+           linux-package/lib/kitty/kittens/diff/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/diff/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/diff/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/diff/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/diff/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/diff/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/diff/main.py
+           linux-package/lib/kitty/kittens/hints/__init__.py
+           linux-package/lib/kitty/kittens/hints/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/hints/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/hints/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/hints/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/hints/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/hints/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/hints/main.py
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__init__.py
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/hyperlinked_grep/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/hyperlinked_grep/main.py
+           linux-package/lib/kitty/kittens/icat/__init__.py
+           linux-package/lib/kitty/kittens/icat/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/icat/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/icat/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/icat/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/icat/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/icat/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/icat/main.py
+           linux-package/lib/kitty/kittens/notify/__init__.py
+           linux-package/lib/kitty/kittens/notify/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/notify/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/notify/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/notify/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/notify/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/notify/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/notify/main.py
+           linux-package/lib/kitty/kittens/pager/__init__.py
+           linux-package/lib/kitty/kittens/pager/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/pager/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/pager/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/pager/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/pager/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/pager/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/pager/main.py
+           linux-package/lib/kitty/kittens/panel/__init__.py
+           linux-package/lib/kitty/kittens/panel/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/panel/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/panel/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/panel/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/panel/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/panel/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/panel/main.py
+           linux-package/lib/kitty/kittens/query_terminal/__init__.py
+           linux-package/lib/kitty/kittens/query_terminal/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/query_terminal/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/query_terminal/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/query_terminal/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/query_terminal/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/query_terminal/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/query_terminal/main.py
+           linux-package/lib/kitty/kittens/remote_file/__init__.py
+           linux-package/lib/kitty/kittens/remote_file/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/remote_file/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/remote_file/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/remote_file/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/remote_file/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/remote_file/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/remote_file/main.py
+           linux-package/lib/kitty/kittens/resize_window/__init__.py
+           linux-package/lib/kitty/kittens/resize_window/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/resize_window/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/resize_window/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/resize_window/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/resize_window/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/resize_window/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/resize_window/main.py
+           linux-package/lib/kitty/kittens/runner.py
+           linux-package/lib/kitty/kittens/show_key/__init__.py
+           linux-package/lib/kitty/kittens/show_key/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/show_key/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/show_key/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/show_key/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/show_key/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/show_key/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/show_key/main.py
+           linux-package/lib/kitty/kittens/ssh/__init__.py
+           linux-package/lib/kitty/kittens/ssh/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/utils.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/utils.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/ssh/__pycache__/utils.cpython-312.pyc
+           linux-package/lib/kitty/kittens/ssh/main.py
+           linux-package/lib/kitty/kittens/ssh/utils.py
+           linux-package/lib/kitty/kittens/themes/__init__.py
+           linux-package/lib/kitty/kittens/themes/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/themes/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/themes/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/themes/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/themes/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/themes/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/themes/main.py
+           linux-package/lib/kitty/kittens/transfer/__init__.py
+           linux-package/lib/kitty/kittens/transfer/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/utils.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/utils.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/transfer/__pycache__/utils.cpython-312.pyc
+           linux-package/lib/kitty/kittens/transfer/main.py
+           linux-package/lib/kitty/kittens/transfer/rsync.so
+           linux-package/lib/kitty/kittens/transfer/utils.py
+           linux-package/lib/kitty/kittens/tui/__init__.py
+           linux-package/lib/kitty/kittens/tui/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/dircolors.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/dircolors.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/dircolors.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/handler.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/handler.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/handler.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/images.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/images.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/images.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/line_edit.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/line_edit.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/line_edit.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/loop.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/loop.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/loop.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/operations.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/operations.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/operations.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/operations_stub.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/operations_stub.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/operations_stub.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/path_completer.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/path_completer.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/path_completer.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/progress.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/progress.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/progress.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/spinners.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/spinners.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/spinners.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/utils.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/utils.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/tui/__pycache__/utils.cpython-312.pyc
+           linux-package/lib/kitty/kittens/tui/dircolors.py
+           linux-package/lib/kitty/kittens/tui/handler.py
+           linux-package/lib/kitty/kittens/tui/images.py
+           linux-package/lib/kitty/kittens/tui/line_edit.py
+           linux-package/lib/kitty/kittens/tui/loop.py
+           linux-package/lib/kitty/kittens/tui/operations.py
+           linux-package/lib/kitty/kittens/tui/operations_stub.py
+           linux-package/lib/kitty/kittens/tui/path_completer.py
+           linux-package/lib/kitty/kittens/tui/progress.py
+           linux-package/lib/kitty/kittens/tui/spinners.py
+           linux-package/lib/kitty/kittens/tui/utils.py
+           linux-package/lib/kitty/kittens/unicode_input/__init__.py
+           linux-package/lib/kitty/kittens/unicode_input/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/unicode_input/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/unicode_input/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kittens/unicode_input/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kittens/unicode_input/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kittens/unicode_input/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kittens/unicode_input/main.py
+           linux-package/lib/kitty/kitty/__init__.py
+           linux-package/lib/kitty/kitty/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/actions.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/actions.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/actions.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/bash.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/bash.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/bash.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/borders.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/borders.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/borders.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/boss.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/boss.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/boss.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/child.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/child.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/child.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/choose_entry.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/choose_entry.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/choose_entry.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/cli.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/cli.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/cli.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/cli_stub.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/cli_stub.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/cli_stub.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/client.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/client.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/client.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/clipboard.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/clipboard.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/clipboard.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/config.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/config.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/config.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/constants.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/constants.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/constants.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/debug_config.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/debug_config.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/debug_config.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/entry_points.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/entry_points.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/entry_points.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/file_transmission.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/file_transmission.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/file_transmission.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/guess_mime_type.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/guess_mime_type.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/guess_mime_type.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/key_encoding.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/key_encoding.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/key_encoding.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/key_names.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/key_names.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/key_names.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/keys.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/keys.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/keys.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/launch.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/launch.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/launch.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/main.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/main.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/main.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/marks.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/marks.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/marks.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/multiprocessing.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/multiprocessing.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/multiprocessing.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/notifications.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/notifications.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/notifications.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/open_actions.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/open_actions.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/open_actions.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/os_window_size.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/os_window_size.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/os_window_size.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/remote_control.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/remote_control.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/remote_control.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/render_cache.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/render_cache.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/render_cache.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/rgb.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/rgb.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/rgb.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/search_query_parser.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/search_query_parser.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/search_query_parser.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/session.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/session.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/session.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shaders.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shaders.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shaders.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shell_integration.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shell_integration.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shell_integration.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shm.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shm.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/shm.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/short_uuid.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/short_uuid.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/short_uuid.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/tab_bar.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/tab_bar.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/tab_bar.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/tabs.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/tabs.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/tabs.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/terminfo.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/terminfo.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/terminfo.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/types.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/types.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/types.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/typing.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/typing.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/typing.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/update_check.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/update_check.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/update_check.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/utils.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/utils.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/utils.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/window_list.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/window_list.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/window_list.cpython-312.pyc
+           linux-package/lib/kitty/kitty/__pycache__/xdg.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/__pycache__/xdg.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/__pycache__/xdg.cpython-312.pyc
+           linux-package/lib/kitty/kitty/actions.py
+           linux-package/lib/kitty/kitty/alpha_blend.glsl
+           linux-package/lib/kitty/kitty/bash.py
+           linux-package/lib/kitty/kitty/bgimage_fragment.glsl
+           linux-package/lib/kitty/kitty/bgimage_vertex.glsl
+           linux-package/lib/kitty/kitty/border_fragment.glsl
+           linux-package/lib/kitty/kitty/border_vertex.glsl
+           linux-package/lib/kitty/kitty/borders.py
+           linux-package/lib/kitty/kitty/boss.py
+           linux-package/lib/kitty/kitty/cell_defines.glsl
+           linux-package/lib/kitty/kitty/cell_fragment.glsl
+           linux-package/lib/kitty/kitty/cell_vertex.glsl
+           linux-package/lib/kitty/kitty/child.py
+           linux-package/lib/kitty/kitty/choose_entry.py
+           linux-package/lib/kitty/kitty/cli.py
+           linux-package/lib/kitty/kitty/cli_stub.py
+           linux-package/lib/kitty/kitty/client.py
+           linux-package/lib/kitty/kitty/clipboard.py
+           linux-package/lib/kitty/kitty/conf/__init__.py
+           linux-package/lib/kitty/kitty/conf/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/generate.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/generate.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/generate.cpython-312.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/types.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/types.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/types.cpython-312.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/utils.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/utils.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/conf/__pycache__/utils.cpython-312.pyc
+           linux-package/lib/kitty/kitty/conf/generate.py
+           linux-package/lib/kitty/kitty/conf/types.py
+           linux-package/lib/kitty/kitty/conf/utils.py
+           linux-package/lib/kitty/kitty/config.py
+           linux-package/lib/kitty/kitty/constants.py
+           linux-package/lib/kitty/kitty/debug_config.py
+           linux-package/lib/kitty/kitty/entry_points.py
+           linux-package/lib/kitty/kitty/file_transmission.py
+           linux-package/lib/kitty/kitty/fonts/__init__.py
+           linux-package/lib/kitty/kitty/fonts/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/box_drawing.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/box_drawing.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/box_drawing.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/common.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/common.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/common.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/core_text.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/core_text.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/core_text.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/features.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/features.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/features.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/fontconfig.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/fontconfig.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/fontconfig.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/list.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/list.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/list.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/render.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/render.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/fonts/__pycache__/render.cpython-312.pyc
+           linux-package/lib/kitty/kitty/fonts/box_drawing.py
+           linux-package/lib/kitty/kitty/fonts/common.py
+           linux-package/lib/kitty/kitty/fonts/core_text.py
+           linux-package/lib/kitty/kitty/fonts/features.py
+           linux-package/lib/kitty/kitty/fonts/fontconfig.py
+           linux-package/lib/kitty/kitty/fonts/list.py
+           linux-package/lib/kitty/kitty/fonts/render.py
+           linux-package/lib/kitty/kitty/glfw-wayland.so
+           linux-package/lib/kitty/kitty/glfw-x11.so
+           linux-package/lib/kitty/kitty/graphics_fragment.glsl
+           linux-package/lib/kitty/kitty/graphics_vertex.glsl
+           linux-package/lib/kitty/kitty/guess_mime_type.py
+           linux-package/lib/kitty/kitty/key_encoding.py
+           linux-package/lib/kitty/kitty/key_names.py
+           linux-package/lib/kitty/kitty/keys.py
+           linux-package/lib/kitty/kitty/launch.py
+           linux-package/lib/kitty/kitty/layout/__init__.py
+           linux-package/lib/kitty/kitty/layout/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/base.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/base.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/base.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/grid.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/grid.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/grid.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/interface.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/interface.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/interface.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/splits.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/splits.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/splits.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/stack.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/stack.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/stack.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/tall.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/tall.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/tall.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/vertical.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/vertical.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/layout/__pycache__/vertical.cpython-312.pyc
+           linux-package/lib/kitty/kitty/layout/base.py
+           linux-package/lib/kitty/kitty/layout/grid.py
+           linux-package/lib/kitty/kitty/layout/interface.py
+           linux-package/lib/kitty/kitty/layout/splits.py
+           linux-package/lib/kitty/kitty/layout/stack.py
+           linux-package/lib/kitty/kitty/layout/tall.py
+           linux-package/lib/kitty/kitty/layout/vertical.py
+           linux-package/lib/kitty/kitty/linear2srgb.glsl
+           linux-package/lib/kitty/kitty/main.py
+           linux-package/lib/kitty/kitty/marks.py
+           linux-package/lib/kitty/kitty/multiprocessing.py
+           linux-package/lib/kitty/kitty/notifications.py
+           linux-package/lib/kitty/kitty/open_actions.py
+           linux-package/lib/kitty/kitty/options/__init__.py
+           linux-package/lib/kitty/kitty/options/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/definition.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/definition.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/definition.cpython-312.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/parse.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/parse.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/parse.cpython-312.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/types.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/types.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/types.cpython-312.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/utils.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/utils.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/options/__pycache__/utils.cpython-312.pyc
+           linux-package/lib/kitty/kitty/options/definition.py
+           linux-package/lib/kitty/kitty/options/parse.py
+           linux-package/lib/kitty/kitty/options/types.py
+           linux-package/lib/kitty/kitty/options/utils.py
+           linux-package/lib/kitty/kitty/os_window_size.py
+           linux-package/lib/kitty/kitty/rc/__init__.py
+           linux-package/lib/kitty/kitty/rc/__pycache__/__init__.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/__init__.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/__init__.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/action.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/action.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/action.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/base.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/base.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/base.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/close_tab.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/close_tab.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/close_tab.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/close_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/close_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/close_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/create_marker.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/create_marker.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/create_marker.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/detach_tab.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/detach_tab.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/detach_tab.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/detach_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/detach_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/detach_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/disable_ligatures.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/disable_ligatures.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/disable_ligatures.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/env.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/env.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/env.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/focus_tab.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/focus_tab.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/focus_tab.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/focus_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/focus_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/focus_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/get_colors.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/get_colors.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/get_colors.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/get_text.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/get_text.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/get_text.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/goto_layout.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/goto_layout.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/goto_layout.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/kitten.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/kitten.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/kitten.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/last_used_layout.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/last_used_layout.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/last_used_layout.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/launch.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/launch.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/launch.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/load_config.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/load_config.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/load_config.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/ls.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/ls.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/ls.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/new_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/new_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/new_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/remove_marker.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/remove_marker.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/remove_marker.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/resize_os_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/resize_os_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/resize_os_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/resize_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/resize_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/resize_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/run.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/run.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/run.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/scroll_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/scroll_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/scroll_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/select_window.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/select_window.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/select_window.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/send_key.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/send_key.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/send_key.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/send_text.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/send_text.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/send_text.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_background_image.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_background_image.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_background_image.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_background_opacity.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_background_opacity.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_background_opacity.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_colors.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_colors.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_colors.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_enabled_layouts.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_enabled_layouts.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_enabled_layouts.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_font_size.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_font_size.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_font_size.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_spacing.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_spacing.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_spacing.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_tab_color.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_tab_color.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_tab_color.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_tab_title.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_tab_title.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_tab_title.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_user_vars.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_user_vars.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_user_vars.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_window_logo.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_window_logo.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_window_logo.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_window_title.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_window_title.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/set_window_title.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/signal_child.cpython-312.opt-1.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/signal_child.cpython-312.opt-2.pyc
+           linux-package/lib/kitty/kitty/rc/__pycache__/signal_child.cpython-312.pyc
+           linux-package/lib/kitty/kitty/rc/action.py
+           linux-package/lib/kitty/kitty/rc/base.py
+           linux-package/lib/kitty/kitty/rc/close_tab.py
+           linux-package/lib/kitty/kitty/rc/close_window.py
+           linux-package/lib/kitty/kitty/rc/create_marker.py
+           linux-package/lib/kitty/kitty/rc/detach_tab.py
+           linux-package/lib/kitty/kitty/rc/detach_window.py
+           linux-package/lib/kitty/kitty/rc/disable_ligatures.py
+           linux-package/lib/kitty/kitty/rc/env.py
+           linux-package/lib/kitty/kitty/rc/focus_tab.py
+           linux-package/lib/kitty/kitty/rc/focus_window.py
+           linux-package/lib/kitty/kitty/rc/get_colors.py
+           linux-package/lib/kitty/kitty/rc/get_text.py
+           linux-package/lib/kitty/kitty/rc/goto_layout.py
+           linux-package/lib/kitty/kitty/rc/kitten.py
+           linux-package/lib/kitty/kitty/rc/last_used_layout.py
+           linux-package/lib/kitty/kitty/rc/launch.py
+           linux-package/lib/kitty/kitty/rc/load_config.py
+           linux-package/lib/kitty/kitty/rc/ls.py
+           linux-package/lib/kitty/kitty/rc/new_window.py
+           linux-package/lib/kitty/kitty/rc/remove_marker.py
+           linux-package/lib/kitty/kitty/rc/resize_os_window.py
+           linux-package/lib/kitty/kitty/rc/resize_window.py
+           linux-package/lib/kitty/kitty/rc/run.py
+           linux-package/lib/kitty/kitty/rc/scroll_window.py
+           linux-package/lib/kitty/kitty/rc/select_window.py
+           linux-package/lib/kitty/kitty/rc/send_key.py
+           linux-package/lib/kitty/kitty/rc/send_text.py
+           linux-package/lib/kitty/kitty/rc/set_background_image.py
+           linux-package/lib/kitty/kitty/rc/set_background_opacity.py
+           linux-package/lib/kitty/kitty/rc/set_colors.py
+           linux-package/lib/kitty/kitty/rc/set_enabled_layouts.py
+           linux-package/lib/kitty/kitty/rc/set_font_size.py
+           linux-package/lib/kitty/kitty/rc/set_spacing.py
+           linux-package/lib/kitty/kitty/rc/set_tab_color.py
+           linux-package/lib/kitty/kitty/rc/set_tab_title.py
+           linux-package/lib/kitty/kitty/rc/set_user_vars.py
+           linux-package/lib/kitty/kitty/rc/set_window_logo.py
+           linux-package/lib/kitty/kitty/rc/set_window_title.py
+           linux-package/lib/kitty/kitty/rc/signal_child.py
+           linux-package/lib/kitty/kitty/remote_control.py
+           linux-package/lib/kitty/kitty/render_cache.py
+           linux-package/lib/kitty/kitty/rgb.py
+           linux-package/lib/kitty/kitty/search_query_parser.py
+           linux-package/lib/kitty/kitty/session.py
+           linux-package/lib/kitty/kitty/shaders.py
+           linux-package/lib/kitty/kitty/shell_integration.py
+           linux-package/lib/kitty/kitty/shm.py
+           linux-package/lib/kitty/kitty/short_uuid.py
+           linux-package/lib/kitty/kitty/tab_bar.py
+           linux-package/lib/kitty/kitty/tabs.py
+           linux-package/lib/kitty/kitty/terminfo.py
+           linux-package/lib/kitty/kitty/tint_fragment.glsl
+           linux-package/lib/kitty/kitty/tint_vertex.glsl
+           linux-package/lib/kitty/kitty/types.py
+           linux-package/lib/kitty/kitty/typing.py
+           linux-package/lib/kitty/kitty/update_check.py
+           linux-package/lib/kitty/kitty/utils.py
+           linux-package/lib/kitty/kitty/window.py
+           linux-package/lib/kitty/kitty/window_list.py
+           linux-package/lib/kitty/kitty/xdg.py
+           linux-package/lib/kitty/logo/beam-cursor.png
+           linux-package/lib/kitty/logo/beam-cursor@2x.png
+           linux-package/lib/kitty/logo/kitty-128.png
+           linux-package/lib/kitty/logo/kitty.png
+           linux-package/lib/kitty/shell-integration/bash/kitty.bash
+           linux-package/lib/kitty/shell-integration/fish/vendor_completions.d/clone-in-kitty.fish
+           linux-package/lib/kitty/shell-integration/fish/vendor_completions.d/kitten.fish
+           linux-package/lib/kitty/shell-integration/fish/vendor_completions.d/kitty.fish
+           linux-package/lib/kitty/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
+           linux-package/lib/kitty/shell-integration/ssh/bootstrap.py
+           linux-package/lib/kitty/shell-integration/zsh/.zshenv
+           linux-package/lib/kitty/shell-integration/zsh/completions/_kitty
+           linux-package/lib/kitty/shell-integration/zsh/kitty-integration
+           linux-package/lib/kitty/shell-integration/zsh/kitty.zsh
+           linux-package/lib/kitty/terminfo/kitty.termcap
+           linux-package/lib/kitty/terminfo/kitty.terminfo
+           linux-package/lib/kitty/terminfo/x/xterm-kitty
+           linux-package/share/applications/kitty-open.desktop
+           linux-package/share/applications/kitty.desktop
+           linux-package/share/icons/hicolor/256x256/apps/kitty.png
+           linux-package/share/man/man1/kitten-@-action.1
+           linux-package/share/man/man1/kitten-@-close-tab.1
+           linux-package/share/man/man1/kitten-@-close-window.1
+           linux-package/share/man/man1/kitten-@-create-marker.1
+           linux-package/share/man/man1/kitten-@-detach-tab.1
+           linux-package/share/man/man1/kitten-@-detach-window.1
+           linux-package/share/man/man1/kitten-@-disable-ligatures.1
+           linux-package/share/man/man1/kitten-@-env.1
+           linux-package/share/man/man1/kitten-@-focus-tab.1
+           linux-package/share/man/man1/kitten-@-focus-window.1
+           linux-package/share/man/man1/kitten-@-get-colors.1
+           linux-package/share/man/man1/kitten-@-get-text.1
+           linux-package/share/man/man1/kitten-@-goto-layout.1
+           linux-package/share/man/man1/kitten-@-kitten.1
+           linux-package/share/man/man1/kitten-@-last-used-layout.1
+           linux-package/share/man/man1/kitten-@-launch.1
+           linux-package/share/man/man1/kitten-@-load-config.1
+           linux-package/share/man/man1/kitten-@-ls.1
+           linux-package/share/man/man1/kitten-@-new-window.1
+           linux-package/share/man/man1/kitten-@-remove-marker.1
+           linux-package/share/man/man1/kitten-@-resize-os-window.1
+           linux-package/share/man/man1/kitten-@-resize-window.1
+           linux-package/share/man/man1/kitten-@-run.1
+           linux-package/share/man/man1/kitten-@-scroll-window.1
+           linux-package/share/man/man1/kitten-@-select-window.1
+           linux-package/share/man/man1/kitten-@-send-key.1
+           linux-package/share/man/man1/kitten-@-send-text.1
+           linux-package/share/man/man1/kitten-@-set-background-image.1
+           linux-package/share/man/man1/kitten-@-set-background-opacity.1
+           linux-package/share/man/man1/kitten-@-set-colors.1
+           linux-package/share/man/man1/kitten-@-set-enabled-layouts.1
+           linux-package/share/man/man1/kitten-@-set-font-size.1
+           linux-package/share/man/man1/kitten-@-set-spacing.1
+           linux-package/share/man/man1/kitten-@-set-tab-color.1
+           linux-package/share/man/man1/kitten-@-set-tab-title.1
+           linux-package/share/man/man1/kitten-@-set-user-vars.1
+           linux-package/share/man/man1/kitten-@-set-window-logo.1
+           linux-package/share/man/man1/kitten-@-set-window-title.1
+           linux-package/share/man/man1/kitten-@-signal-child.1
+           linux-package/share/man/man1/kitten-@.1
+           linux-package/share/man/man1/kitten-ask.1
+           linux-package/share/man/man1/kitten-broadcast.1
+           linux-package/share/man/man1/kitten-choose-fonts.1
+           linux-package/share/man/man1/kitten-choose_fonts.1
+           linux-package/share/man/man1/kitten-clipboard.1
+           linux-package/share/man/man1/kitten-diff.1
+           linux-package/share/man/man1/kitten-edit-in-kitty.1
+           linux-package/share/man/man1/kitten-hints.1
+           linux-package/share/man/man1/kitten-hyperlinked-grep.1
+           linux-package/share/man/man1/kitten-icat.1
+           linux-package/share/man/man1/kitten-mouse-demo.1
+           linux-package/share/man/man1/kitten-notify.1
+           linux-package/share/man/man1/kitten-panel.1
+           linux-package/share/man/man1/kitten-query-terminal.1
+           linux-package/share/man/man1/kitten-remote-file.1
+           linux-package/share/man/man1/kitten-run-shell.1
+           linux-package/share/man/man1/kitten-show-key.1
+           linux-package/share/man/man1/kitten-ssh.1
+           linux-package/share/man/man1/kitten-themes.1
+           linux-package/share/man/man1/kitten-transfer.1
+           linux-package/share/man/man1/kitten-unicode-input.1
+           linux-package/share/man/man1/kitten-update-self.1
+           linux-package/share/man/man1/kitten.1
+           linux-package/share/man/man1/kitty.1
+           linux-package/share/man/man5/kitty.conf.5
+           linux-package/share/terminfo/x/xterm-kitty
+           logo/attribution.txt
+           logo/beam-cursor.png
+           logo/beam-cursor@2x.png
+           logo/kitty-128.png
+           logo/kitty.iconset/icon_128x128.png
+           logo/kitty.iconset/icon_128x128@2x.png
+           logo/kitty.iconset/icon_16x16.png
+           logo/kitty.iconset/icon_16x16@2x.png
+           logo/kitty.iconset/icon_256x256.png
+           logo/kitty.iconset/icon_256x256@2x.png
+           logo/kitty.iconset/icon_32x32.png
+           logo/kitty.iconset/icon_32x32@2x.png
+           logo/kitty.iconset/icon_512x512.png
+           logo/kitty.iconset/icon_512x512@2x.png
+           logo/kitty.png
+           logo/make.py
+           publish.py
+           pyproject.toml
+           session.vim
+           setup.py
+           shell-integration/bash/kitty.bash
+           shell-integration/fish/vendor_completions.d/clone-in-kitty.fish
+           shell-integration/fish/vendor_completions.d/kitten.fish
+           shell-integration/fish/vendor_completions.d/kitty.fish
+           shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish
+           shell-integration/ssh/bootstrap.py
+           shell-integration/zsh/.zshenv
+           shell-integration/zsh/completions/_kitty
+           shell-integration/zsh/kitty-integration
+           shell-integration/zsh/kitty.zsh
+           shell.nix
+           staticcheck.conf
+           terminfo/kitty.termcap
+           terminfo/kitty.terminfo
+           terminfo/x/xterm-kitty
+           test.py
+           tools/README.rst
+           tools/cli/bash.go
+           tools/cli/command.go
+           tools/cli/completion-main.go
+           tools/cli/completion-parse-args.go
+           tools/cli/completion.go
+           tools/cli/files.go
+           tools/cli/files_test.go
+           tools/cli/fish.go
+           tools/cli/group.go
+           tools/cli/help.go
+           tools/cli/markup/prettify.go
+           tools/cli/option-from-string.go
+           tools/cli/option.go
+           tools/cli/parse-args.go
+           tools/cli/types_test.go
+           tools/cli/zsh.go
+           tools/cmd/at/cmd_action_generated.go
+           tools/cmd/at/cmd_close_tab_generated.go
+           tools/cmd/at/cmd_close_window_generated.go
+           tools/cmd/at/cmd_create_marker_generated.go
+           tools/cmd/at/cmd_detach_tab_generated.go
+           tools/cmd/at/cmd_detach_window_generated.go
+           tools/cmd/at/cmd_disable_ligatures_generated.go
+           tools/cmd/at/cmd_env_generated.go
+           tools/cmd/at/cmd_focus_tab_generated.go
+           tools/cmd/at/cmd_focus_window_generated.go
+           tools/cmd/at/cmd_get_colors_generated.go
+           tools/cmd/at/cmd_get_text_generated.go
+           tools/cmd/at/cmd_goto_layout_generated.go
+           tools/cmd/at/cmd_kitten_generated.go
+           tools/cmd/at/cmd_last_used_layout_generated.go
+           tools/cmd/at/cmd_launch_generated.go
+           tools/cmd/at/cmd_load_config_generated.go
+           tools/cmd/at/cmd_ls_generated.go
+           tools/cmd/at/cmd_new_window_generated.go
+           tools/cmd/at/cmd_remove_marker_generated.go
+           tools/cmd/at/cmd_resize_os_window_generated.go
+           tools/cmd/at/cmd_resize_window_generated.go
+           tools/cmd/at/cmd_run_generated.go
+           tools/cmd/at/cmd_scroll_window_generated.go
+           tools/cmd/at/cmd_select_window_generated.go
+           tools/cmd/at/cmd_send_key_generated.go
+           tools/cmd/at/cmd_send_text_generated.go
+           tools/cmd/at/cmd_set_background_image_generated.go
+           tools/cmd/at/cmd_set_background_opacity_generated.go
+           tools/cmd/at/cmd_set_colors_generated.go
+           tools/cmd/at/cmd_set_enabled_layouts_generated.go
+           tools/cmd/at/cmd_set_font_size_generated.go
+           tools/cmd/at/cmd_set_spacing_generated.go
+           tools/cmd/at/cmd_set_tab_color_generated.go
+           tools/cmd/at/cmd_set_tab_title_generated.go
+           tools/cmd/at/cmd_set_user_vars_generated.go
+           tools/cmd/at/cmd_set_window_logo_generated.go
+           tools/cmd/at/cmd_set_window_title_generated.go
+           tools/cmd/at/cmd_signal_child_generated.go
+           tools/cmd/at/complete_actions.go
+           tools/cmd/at/env.go
+           tools/cmd/at/global_opts_generated.go
+           tools/cmd/at/kitty_actions_generated.go
+           tools/cmd/at/launch.go
+           tools/cmd/at/main.go
+           tools/cmd/at/main_test.go
+           tools/cmd/at/run.go
+           tools/cmd/at/scroll_window.go
+           tools/cmd/at/send_text.go
+           tools/cmd/at/set_background_opacity.go
+           tools/cmd/at/set_colors.go
+           tools/cmd/at/set_font_size.go
+           tools/cmd/at/set_spacing.go
+           tools/cmd/at/set_tab_color.go
+           tools/cmd/at/set_window_logo.go
+           tools/cmd/at/shell.go
+           tools/cmd/at/socket_io.go
+           tools/cmd/at/template.go
+           tools/cmd/at/tty_io.go
+           tools/cmd/benchmark/main.go
+           tools/cmd/completion/kitty.go
+           tools/cmd/completion/kitty_generated.go
+           tools/cmd/edit_in_kitty/launch_generated.go
+           tools/cmd/edit_in_kitty/main.go
+           tools/cmd/main.go
+           tools/cmd/mouse_demo/main.go
+           tools/cmd/pytest/main.go
+           tools/cmd/run_shell/main.go
+           tools/cmd/show_error/main.go
+           tools/cmd/tool/confirm_and_run_shebang.go
+           tools/cmd/tool/main.go
+           tools/cmd/update_self/main.go
+           tools/config/api.go
+           tools/config/api_test.go
+           tools/config/utils.go
+           tools/config/utils_test.go
+           tools/crypto/crypto.go
+           tools/rsync/algorithm.go
+           tools/rsync/algorithm_stringer_generated.go
+           tools/rsync/api.go
+           tools/rsync/api_test.go
+           tools/simdstring/asm_128_amd64_generated.go
+           tools/simdstring/asm_128_amd64_generated.s
+           tools/simdstring/asm_128_amd64_generated_test.go
+           tools/simdstring/asm_128_amd64_generated_test.s
+           tools/simdstring/asm_128_arm64_generated.go
+           tools/simdstring/asm_128_arm64_generated.s
+           tools/simdstring/asm_128_arm64_generated_test.go
+           tools/simdstring/asm_128_arm64_generated_test.s
+           tools/simdstring/asm_256_amd64_generated.go
+           tools/simdstring/asm_256_amd64_generated.s
+           tools/simdstring/asm_256_amd64_generated_test.go
+           tools/simdstring/asm_256_amd64_generated_test.s
+           tools/simdstring/asm_256_arm64_generated.go
+           tools/simdstring/asm_256_arm64_generated_test.go
+           tools/simdstring/asm_other_128_generated.go
+           tools/simdstring/asm_other_128_generated_test.go
+           tools/simdstring/asm_other_256_generated.go
+           tools/simdstring/asm_other_256_generated_test.go
+           tools/simdstring/benchmarks_test.go
+           tools/simdstring/generate.go
+           tools/simdstring/intrinsics.go
+           tools/simdstring/intrinsics_test.go
+           tools/simdstring/scalar.go
+           tools/themes/collection_test.go
+           tools/tty/tty.go
+           tools/tty/tty_bsd.go
+           tools/tty/tty_linux.go
+           tools/tui/dcs_to_kitty.go
+           tools/tui/download_with_progress.go
+           tools/tui/graphics/collection.go
+           tools/tui/graphics/command.go
+           tools/tui/graphics/command_stringer_generated.go
+           tools/tui/graphics/command_test.go
+           tools/tui/hold.go
+           tools/tui/loop/api.go
+           tools/tui/loop/key-encoding.go
+           tools/tui/loop/key-encoding_test.go
+           tools/tui/loop/mouse.go
+           tools/tui/loop/read.go
+           tools/tui/loop/run.go
+           tools/tui/loop/terminal-state.go
+           tools/tui/loop/timers.go
+           tools/tui/loop/write.go
+           tools/tui/mouse.go
+           tools/tui/password.go
+           tools/tui/progress-bar.go
+           tools/tui/progress-bar_test.go
+           tools/tui/readline/actions.go
+           tools/tui/readline/actions_generated.go
+           tools/tui/readline/actions_test.go
+           tools/tui/readline/api.go
+           tools/tui/readline/completion.go
+           tools/tui/readline/draw.go
+           tools/tui/readline/history.go
+           tools/tui/readline/keys.go
+           tools/tui/render_lines.go
+           tools/tui/run.go
+           tools/tui/sgr/insert-formatting.go
+           tools/tui/sgr/insert-formatting_test.go
+           tools/tui/shell_integration/api.go
+           tools/tui/shell_integration/api_test.go
+           tools/tui/shell_integration/data.go
+           tools/tui/shell_integration/data_generated.bin
+           tools/tui/shortcuts/api.go
+           tools/tui/shortcuts/implementation.go
+           tools/tui/spinners.go
+           tools/tui/spinners_generated.go
+           tools/tui/subseq/score.go
+           tools/tui/subseq/score_test.go
+           tools/tui/tmux.go
+           tools/tui/ui_kitten.go
+           tools/unicode_names/data_generated.bin
+           tools/unicode_names/query.go
+           tools/unicode_names/query_test.go
+           tools/utils/atomic-write.go
+           tools/utils/base85/base85.go
+           tools/utils/base85/base85_test.go
+           tools/utils/cache.go
+           tools/utils/cached_values.go
+           tools/utils/clock_with_raw.go
+           tools/utils/clock_without_raw.go
+           tools/utils/download_file.go
+           tools/utils/embed.go
+           tools/utils/filelock.go
+           tools/utils/filelock_test.go
+           tools/utils/hostname.go
+           tools/utils/humanize/bytes.go
+           tools/utils/humanize/times.go
+           tools/utils/humanize/times_test.go
+           tools/utils/images/convert.go
+           tools/utils/images/formats.go
+           tools/utils/images/loading.go
+           tools/utils/images/opaque.go
+           tools/utils/images/rowcolumn_diacritics.go
+           tools/utils/images/to_rgb.go
+           tools/utils/images/to_rgba.go
+           tools/utils/images/transforms.go
+           tools/utils/images/utils.go
+           tools/utils/io.go
+           tools/utils/iso8601.go
+           tools/utils/iso8601_test.go
+           tools/utils/levenshtein.go
+           tools/utils/longest-common.go
+           tools/utils/longest-common_test.go
+           tools/utils/mimetypes.go
+           tools/utils/mimetypes_generated.go
+           tools/utils/mimetypes_textual_generated.go
+           tools/utils/misc.go
+           tools/utils/passwd.go
+           tools/utils/passwd_test.go
+           tools/utils/paths.go
+           tools/utils/paths/well_known.go
+           tools/utils/random/random.go
+           tools/utils/regexp.go
+           tools/utils/ring.go
+           tools/utils/ring_test.go
+           tools/utils/secrets/tokens.go
+           tools/utils/select.go
+           tools/utils/select_posix.go
+           tools/utils/select_without_pselect.go
+           tools/utils/set.go
+           tools/utils/shell.go
+           tools/utils/shlex/ansi_c_escapes.go
+           tools/utils/shlex/shlex.go
+           tools/utils/shlex/shlex_test.go
+           tools/utils/shm/fallocate_linux.go
+           tools/utils/shm/fallocate_other.go
+           tools/utils/shm/shm.go
+           tools/utils/shm/shm_fs.go
+           tools/utils/shm/shm_syscall.go
+           tools/utils/shm/shm_test.go
+           tools/utils/shm/specific_darwin.go
+           tools/utils/shm/specific_dragonfly.go
+           tools/utils/shm/specific_freebsd.go
+           tools/utils/shm/specific_linux.go
+           tools/utils/shm/specific_netbsd.go
+           tools/utils/shm/specific_openbsd.go
+           tools/utils/short-uuid.go
+           tools/utils/short-uuid_test.go
+           tools/utils/sockets.go
+           tools/utils/sockets_test.go
+           tools/utils/stream_decompressor.go
+           tools/utils/stream_decompressor_test.go
+           tools/utils/strings.go
+           tools/utils/strings_test.go
+           tools/utils/style/api.go
+           tools/utils/style/color-names_generated.go
+           tools/utils/style/indent-and-wrap.go
+           tools/utils/style/indent-and-wrap_test.go
+           tools/utils/style/wrapper.go
+           tools/utils/style/wrapper_test.go
+           tools/utils/tar.go
+           tools/utils/tmpfile_linux.go
+           tools/utils/tmpfile_others.go
+           tools/utils/tpmfile_test.go
+           tools/utils/types.go
+           tools/utils/unsafe.go
+           tools/utils/utf-8.go
+           tools/utils/which.go
+           tools/wcswidth/escape-code-parser.go
+           tools/wcswidth/escape-code-parser_test.go
+           tools/wcswidth/iter.go
+           tools/wcswidth/truncate.go
+           tools/wcswidth/wcswidth.go
+           tools/wcswidth/wcswidth_test.go
+           update-on-ox
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     glfw/backend_utils.c
+           glfw/linux_desktop_settings.c
+           glfw/linux_desktop_settings.h
+           glfw/linux_notify.c
+           glfw/linux_notify.h
+           glfw/main_loop.h
+           glfw/memfd.h
+           glfw/monotonic.c
+           glfw/wl_client_side_decorations.c
+           glfw/wl_client_side_decorations.h
+           glfw/wl_text_input.c
+           glfw/wl_text_input.h
+           glfw/xkb-compat-shim.h
+           kittens/transfer/algorithm.c
+           kitty/animation.c
+           kitty/animation.h
+           kitty/arches.h
+           kitty/backtrace.h
+           kitty/banned.h
+           kitty/base64.h
+           kitty/binary.h
+           kitty/charsets.h
+           kitty/child-monitor.c
+           kitty/child.c
+           kitty/cleanup.c
+           kitty/cleanup.h
+           kitty/cocoa_window.h
+           kitty/cocoa_window.m
+           kitty/colors.c
+           kitty/colors.h
+           kitty/control-codes.h
+           kitty/core_text.m
+           kitty/cross-platform-random.h
+           kitty/crypto.c
+           kitty/cursor.c
+           kitty/data-types.c
+           kitty/data-types.h
+           kitty/desktop.c
+           kitty/disk-cache.c
+           kitty/disk-cache.h
+           kitty/fast-file-copy.c
+           kitty/fast-file-copy.h
+           kitty/font-names.c
+           kitty/fontconfig.c
+           kitty/fonts.c
+           kitty/fonts.h
+           kitty/freetype.c
+           kitty/freetype_render_ui_text.c
+           kitty/freetype_render_ui_text.h
+           kitty/gl.c
+           kitty/gl.h
+           kitty/glfw.c
+           kitty/glyph-cache.c
+           kitty/glyph-cache.h
+           kitty/graphics.c
+           kitty/graphics.h
+           kitty/history.c
+           kitty/hyperlink.c
+           kitty/hyperlink.h
+           kitty/key_encoding.c
+           kitty/keys.c
+           kitty/keys.h
+           kitty/kittens.c
+           kitty/kitty-verstable.h
+           kitty/launcher/launcher.h
+           kitty/launcher/main.c
+           kitty/launcher/single-instance.c
+           kitty/line-buf.c
+           kitty/line.c
+           kitty/lineops.h
+           kitty/logging.c
+           kitty/loop-utils.c
+           kitty/loop-utils.h
+           kitty/macos_process_info.c
+           kitty/modes.h
+           kitty/monotonic.c
+           kitty/monotonic.h
+           kitty/mouse.c
+           kitty/options/to-c.h
+           kitty/png-reader.c
+           kitty/png-reader.h
+           kitty/rewrap.h
+           kitty/safe-wrappers.h
+           kitty/screen.c
+           kitty/screen.h
+           kitty/shaders.c
+           kitty/shlex.c
+           kitty/simd-string-128.c
+           kitty/simd-string-256.c
+           kitty/simd-string-impl.h
+           kitty/simd-string.c
+           kitty/simd-string.h
+           kitty/state.c
+           kitty/state.h
+           kitty/systemd.c
+           kitty/threading.h
+           kitty/vt-parser.h
+           kitty/wcswidth.c
+           kitty/wcswidth.h
+           kitty/window_logo.c
+           kitty/window_logo.h
+Copyright: 2016-2024 Kovid Goyal <kovid at kovidgoyal.net>
+License:   __UNKNOWN__
+ Distributed under terms of the GPL3 license.
+
+Files:     glfw/backend_utils.h
+           glfw/cocoa_init.m
+           glfw/cocoa_joystick.h
+           glfw/cocoa_joystick.m
+           glfw/cocoa_monitor.m
+           glfw/cocoa_platform.h
+           glfw/cocoa_window.m
+           glfw/context.c
+           glfw/dbus_glfw.c
+           glfw/dbus_glfw.h
+           glfw/egl_context.c
+           glfw/egl_context.h
+           glfw/glfw3.h
+           glfw/glx_context.c
+           glfw/glx_context.h
+           glfw/ibus_glfw.c
+           glfw/ibus_glfw.h
+           glfw/init.c
+           glfw/input.c
+           glfw/internal.h
+           glfw/linux_joystick.c
+           glfw/linux_joystick.h
+           glfw/mappings.h
+           glfw/monitor.c
+           glfw/nsgl_context.h
+           glfw/nsgl_context.m
+           glfw/null_init.c
+           glfw/null_joystick.c
+           glfw/null_joystick.h
+           glfw/null_monitor.c
+           glfw/null_platform.h
+           glfw/null_window.c
+           glfw/osmesa_context.c
+           glfw/osmesa_context.h
+           glfw/posix_thread.c
+           glfw/posix_thread.h
+           glfw/vulkan.c
+           glfw/window.c
+           glfw/wl_init.c
+           glfw/wl_monitor.c
+           glfw/wl_platform.h
+           glfw/wl_window.c
+           glfw/x11_init.c
+           glfw/x11_monitor.c
+           glfw/x11_platform.h
+           glfw/x11_window.c
+           glfw/xkb_glfw.c
+           glfw/xkb_glfw.h
+Copyright: 2002-2006 Marcus Geelnard
+           2006-2019 Camilla Löwy <elmindreda@glfw.org>
+           2012 Torsten Walluhn <tw@mad-cad.net>
+           2014 Jonas Ådahl <jadahl@gmail.com>
+           2014 Kovid Goyal
+           2016 Google Inc.
+           2018 Kovid Goyal <kovid@kovidgoyal.net>
+License:   Zlib
+ This software is provided 'as-is', without any express or implied
+ warranty. In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+ claim that you wrote the original software. If you use this software
+ in a product, an acknowledgment in the product documentation would
+ be appreciated but is not required.
+ .
+ 2. Altered source versions must be plainly marked as such, and must not
+ be misrepresented as being the original software.
+ .
+ 3. This notice may not be removed or altered from any source
+ distribution.
+
+Files:     glfw/wayland-cursor-shape-v1-client-protocol.h
+           glfw/wayland-fractional-scale-v1-client-protocol.h
+           glfw/wayland-pointer-constraints-unstable-v1-client-protocol.h
+           glfw/wayland-primary-selection-unstable-v1-client-protocol.h
+           glfw/wayland-relative-pointer-unstable-v1-client-protocol.h
+           glfw/wayland-single-pixel-buffer-v1-client-protocol.h
+           glfw/wayland-tablet-unstable-v2-client-protocol.h
+           glfw/wayland-viewporter-client-protocol.h
+           glfw/wayland-xdg-activation-v1-client-protocol.h
+           glfw/wayland-xdg-decoration-unstable-v1-client-protocol.h
+           glfw/wayland-xdg-shell-client-protocol.h
+Copyright: 2008-2013 Kristian Høgsberg
+           2010-2013 Intel Corporation
+           2013 Jasper St. Pierre
+           2013 Rafael Antognolli
+           2013-2016 Collabora, Ltd.
+           2014 Jonas Ådahl
+           2014 © Stephen "Lyude" Chandler Paul
+           2015-2016 Red Hat
+           2015-2016 © Red Hat, Inc.
+           2015-2017 Red Hat Inc.
+           2015-2017 Samsung Electronics Co., Ltd
+           2018 The Chromium Authors
+           2018-2023 Simon Ser
+           2020 Aleix Pol Gonzalez <aleixpol@kde.org>
+           2020 Carlos Garnacho <carlosg@gnome.org>
+           2022 Kenny Levinsen
+License:   MIT
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice (including the next
+ paragraph) shall be included in all copies or substantial portions of the
+ Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+ </pre>
+
+Files:     glfw/wayland-cursor-shape-v1-client-protocol.c
+           glfw/wayland-fractional-scale-v1-client-protocol.c
+           glfw/wayland-pointer-constraints-unstable-v1-client-protocol.c
+           glfw/wayland-primary-selection-unstable-v1-client-protocol.c
+           glfw/wayland-relative-pointer-unstable-v1-client-protocol.c
+           glfw/wayland-single-pixel-buffer-v1-client-protocol.c
+           glfw/wayland-tablet-unstable-v2-client-protocol.c
+           glfw/wayland-viewporter-client-protocol.c
+           glfw/wayland-xdg-activation-v1-client-protocol.c
+           glfw/wayland-xdg-decoration-unstable-v1-client-protocol.c
+           glfw/wayland-xdg-shell-client-protocol.c
+Copyright: 2008-2013 Kristian Høgsberg
+           2010-2013 Intel Corporation
+           2013 Jasper St. Pierre
+           2013 Rafael Antognolli
+           2013-2016 Collabora, Ltd.
+           2014 Jonas Ådahl
+           2014 © Stephen "Lyude" Chandler Paul
+           2015-2016 Red Hat
+           2015-2016 © Red Hat, Inc.
+           2015-2017 Red Hat Inc.
+           2015-2017 Samsung Electronics Co., Ltd
+           2018 The Chromium Authors
+           2018-2023 Simon Ser
+           2020 Aleix Pol Gonzalez <aleixpol@kde.org>
+           2020 Carlos Garnacho <carlosg@gnome.org>
+           2022 Kenny Levinsen
+License:   MIT
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice (including the next
+ paragraph) shall be included in all copies or substantial portions of the
+ Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+Files:     dev.sh
+           docs/installer.sh
+           linux-package/lib/kitty/shell-integration/ssh/kitten
+           linux-package/lib/kitty/shell-integration/ssh/kitty
+           shell-integration/ssh/kitten
+           shell-integration/ssh/kitty
+Copyright: 2018-2023 Kovid Goyal <kovid at kovidgoyal.net>
+License:   __UNKNOWN__
+ Distributed under terms of the GPLv3 license.
+
+Files:     docs/_static/custom.css
+           linux-package/lib/kitty/shell-integration/ssh/bootstrap-utils.sh
+           shell-integration/ssh/bootstrap-utils.sh
+           tools/simdstring/benchmark.sh
+           tools/simdstring/generate.sh
+           tools/simdstring/test.sh
+Copyright: 2018 Kovid Goyal
+           2022-2024 Kovid Goyal <kovid at kovidgoyal.net>
+License:   __UNKNOWN__
+ Distributed under terms of the MIT license.
+
+Files:     glfw/wayland-text-input-unstable-v3-client-protocol.h
+           glfw/wayland-wlr-layer-shell-unstable-v1-client-protocol.h
+Copyright: 2012-2013 Intel Corporation
+           2015-2016 Jan Arne Petersen
+           2017 Drew DeVault
+           2017-2018 Red Hat, Inc.
+           2018 Purism SPC
+License:   ISC
+ Permission to use, copy, modify, distribute, and sell this
+ software and its documentation for any purpose is hereby granted
+ without fee, provided that the above copyright notice appear in
+ all copies and that both that copyright notice and this permission
+ notice appear in supporting documentation, and that the name of
+ the copyright holders not be used in advertising or publicity
+ pertaining to distribution of the software without specific,
+ written prior permission.  The copyright holders make no
+ representations about the suitability of this software for any
+ purpose.  It is provided "as is" without express or implied
+ warranty.
+ .
+ THE COPYRIGHT HOLDERS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS
+ SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS, IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+ AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+ THIS SOFTWARE.
+ </pre>
+
+Files:     glfw/wayland-text-input-unstable-v3-client-protocol.c
+           glfw/wayland-wlr-layer-shell-unstable-v1-client-protocol.c
+Copyright: 2012-2013 Intel Corporation
+           2015-2016 Jan Arne Petersen
+           2017 Drew DeVault
+           2017-2018 Red Hat, Inc.
+           2018 Purism SPC
+License:   ISC
+ Permission to use, copy, modify, distribute, and sell this
+ software and its documentation for any purpose is hereby granted
+ without fee, provided that the above copyright notice appear in
+ all copies and that both that copyright notice and this permission
+ notice appear in supporting documentation, and that the name of
+ the copyright holders not be used in advertising or publicity
+ pertaining to distribution of the software without specific,
+ written prior permission.  The copyright holders make no
+ representations about the suitability of this software for any
+ purpose.  It is provided "as is" without express or implied
+ warranty.
+ .
+ THE COPYRIGHT HOLDERS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS
+ SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS, IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+ AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+ THIS SOFTWARE.
+
+Files:     linux-package/lib/kitty/shell-integration/ssh/bootstrap.sh
+           shell-integration/ssh/bootstrap.sh
+Copyright: 2022 Kovid Goyal <kovid at kovidgoyal.net> Distributed under terms of the GPLv3 license.
+License:   __NO_LICENSE__
+
+Files:     3rdparty/verstable.h
+Copyright: 2023-2024 Jackson L. Allan
+License:   Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+ documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+ persons to whom the Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+ Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Files:     kitty/iqsort.h
+Copyright: 1991-1999 Free Software Foundation, Inc.
+License:   LGPL-2.1+
+ This file is part of the GNU C Library.
+ Written by Douglas C. Schmidt (schmidt@ics.uci.edu).
+ .
+ The GNU C Library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ The GNU C Library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with the GNU C Library; if not, write to the Free
+ Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
+ 02111-1307 USA.
+ .
+ in-line qsort implementation.  Differs from traditional qsort() routine
+ in that it is a macro, not a function, and instead of passing an address
+ of a comparison routine to the function, it is possible to inline
+ comparison routine, thus speeding up sorting a lot.
+ .
+ The FSF address in the above text is the old one.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+Files:     kitty/gl-wrapper.h
+Copyright: 2008-2018 The Khronos Group Inc.
+License:   __HEADER___
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and/or associated documentation files (the
+ "Materials"), to deal in the Materials without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Materials, and to
+ permit persons to whom the Materials are furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Materials.
+ .
+ THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ MATERIALS OR THE USE OR OTHER DEALINGS IN THE MATERIALS.
+ .
+ Khronos platform-specific types and definitions.
+ .
+ The master copy of khrplatform.h is maintained in the Khronos EGL
+ Registry repository at https://github.com/KhronosGroup/EGL-Registry
+ The last semantic modification to khrplatform.h was at commit ID:
+ 67a3e0864c2d75ea5287b9f3d2eb74a745936692
+ .
+ Adopters may modify this file to suit their platform. Adopters are
+ encouraged to submit platform specific modifications to the Khronos
+ group so that they can be included in future versions of this file.
+ Please submit changes by filing pull requests or issues on
+ the EGL Registry repository linked above.
+ .
+ See the Implementer's Guidelines for information about where this file
+ should be located on your system and for more details of its use:
+
+Files:     docs/_static/custom.js
+Copyright: 2021 Kovid Goyal <kovid at kovidgoyal.net>
+License:   __UNKNOWN__
+ Distributed under terms of the GPLv3 license
+ .
+ jshint esversion: 6
+
+Files:     3rdparty/ringbuf/ringbuf.c
+Copyright: and related and neighboring rights to this software to
+License:   __UNKNOWN__
+ the public domain worldwide. This software is distributed without
+ any warranty.
+ .
+ You should have received a copy of the CC0 Public Domain Dedication
+ along with this software. If not, see
+ <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+Files:     tools/themes/collection.go
+Copyright: __NO_COPYRIGHT__ in: tools/themes/collection.go
+License:   __UNKNOWN__
+ func ParseThemeMetadata(path string) (*ThemeMetadata, map[string]string, error) {
+
+Files:     kitty/vt-parser.c
+Copyright: 2023 Kovid Goyal <kovid at kovidgoyal.net>
+License:   __UNKNOWN__
+ Distributed under terms of the GPL3 license.
+ .
+ TODO: Test clipboard kitten with 52 and 5522
+
+Files:     kitty/charsets.c
+Copyright: 2016 Kovid Goyal <kovid at kovidgoyal.net>
+License:   __UNKNOWN__
+ Distributed under terms of the GPL3 license.
+ .
+ Taken from consolemap.c in the linux vt driver sourcecode
+
+Files:     3rdparty/ringbuf/ringbuf.h
+Copyright: and related and neighboring rights to this software to
+License:   __UNKNOWN__
+ the public domain worldwide. This software is distributed without
+ any warranty.
+ .
+ You should have received a copy of the CC0 Public Domain Dedication
+ along with this software. If not, see
+ <http://creativecommons.org/publicdomain/zero/1.0/>.
+ .
+ A byte-addressable ring buffer FIFO implementation.
+ .
+ The ring buffer's head pointer points to the starting location
+ where data should be written when copying data *into* the buffer
+
+Files:     kittens/diff/diff.go
+Copyright: 2022 The Go Authors.
+License:   __UNKNOWN__
+ Use of this source code is governed by a BSD-style
+ license that can be found in the LICENSE file.
+
+Files:     3rdparty/base64/lib/tables/table_generator.c
+Copyright: 2005-2006 Nick Galbreath -- nickg [at] modp [dot] com
+           2017 Matthieu Darbois
+License:   BSD-2-Clause
+ http://modp.com/release/base64
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ - Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ .
+ - Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+ IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         docs/support.html
+#         logo/kitty.svg
+#         logo/kitty-framed.svg
+#         linux-package/share/icons/hicolor/scalable/apps/kitty.svg
+#         glfw/wlr-layer-shell-unstable-v1.xml
+#         glfw/kwin-blur-v1.xml
+
+#----------------------------------------------------------------------------
+# huge files   (skipped):
+#         fonts/SymbolsNerdFontMono-Regular.ttf
+#         kitty/fast_data_types.so
+#         tools/wcswidth/std.go
+#         tools/unicode_names/names.txt
+#         kitty_tests/iosevka-regular.ttf
+#         linux-package/lib/kitty/fonts/SymbolsNerdFontMono-Regular.ttf
+#         linux-package/lib/kitty/kitty/fast_data_types.so
+#         linux-package/bin/kitten
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+                     GNU GENERAL PUBLIC LICENSE
+                        Version 3, 29 June 2007
+ .
+  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+  Everyone is permitted to copy and distribute verbatim copies
+  of this license document, but changing it is not allowed.
+ .
+                             Preamble
+ .
+   The GNU General Public License is a free, copyleft license for
+ software and other kinds of works.
+ .
+   The licenses for most software and other practical works are designed
+ to take away your freedom to share and change the works.  By contrast,
+ the GNU General Public License is intended to guarantee your freedom to
+ share and change all versions of a program--to make sure it remains free
+ software for all its users.  We, the Free Software Foundation, use the
+ GNU General Public License for most of our software; it applies also to
+ any other work released this way by its authors.  You can apply it to
+ your programs, too.
+ .
+   When we speak of free software, we are referring to freedom, not
+ price.  Our General Public Licenses are designed to make sure that you
+ have the freedom to distribute copies of free software (and charge for
+ them if you wish), that you receive source code or can get it if you
+ want it, that you can change the software or use pieces of it in new
+ free programs, and that you know you can do these things.
+ .
+   To protect your rights, we need to prevent others from denying you
+ these rights or asking you to surrender the rights.  Therefore, you have
+ certain responsibilities if you distribute copies of the software, or if
+ you modify it: responsibilities to respect the freedom of others.
+ .
+   For example, if you distribute copies of such a program, whether
+ gratis or for a fee, you must pass on to the recipients the same
+ freedoms that you received.  You must make sure that they, too, receive
+ or can get the source code.  And you must show them these terms so they
+ know their rights.
+ .
+   Developers that use the GNU GPL protect your rights with two steps:
+ (1) assert copyright on the software, and (2) offer you this License
+ giving you legal permission to copy, distribute and/or modify it.
+ .
+   For the developers' and authors' protection, the GPL clearly explains
+ that there is no warranty for this free software.  For both users' and
+ authors' sake, the GPL requires that modified versions be marked as
+ changed, so that their problems will not be attributed erroneously to
+ authors of previous versions.
+ .
+   Some devices are designed to deny users access to install or run
+ modified versions of the software inside them, although the manufacturer
+ can do so.  This is fundamentally incompatible with the aim of
+ protecting users' freedom to change the software.  The systematic
+ pattern of such abuse occurs in the area of products for individuals to
+ use, which is precisely where it is most unacceptable.  Therefore, we
+ have designed this version of the GPL to prohibit the practice for those
+ products.  If such problems arise substantially in other domains, we
+ stand ready to extend this provision to those domains in future versions
+ of the GPL, as needed to protect the freedom of users.
+ .
+   Finally, every program is threatened constantly by software patents.
+ States should not allow patents to restrict development and use of
+ software on general-purpose computers, but in those that do, we wish to
+ avoid the special danger that patents applied to a free program could
+ make it effectively proprietary.  To prevent this, the GPL assures that
+ patents cannot be used to render the program non-free.
+ .
+   The precise terms and conditions for copying, distribution and
+ modification follow.
+ .
+                        TERMS AND CONDITIONS
+ .
+   0. Definitions.
+ .
+   "This License" refers to version 3 of the GNU General Public License.
+ .
+   "Copyright" also means copyright-like laws that apply to other kinds of
+ works, such as semiconductor masks.
+ .
+   "The Program" refers to any copyrightable work licensed under this
+ License.  Each licensee is addressed as "you".  "Licensees" and
+ "recipients" may be individuals or organizations.
+ .
+   To "modify" a work means to copy from or adapt all or part of the work
+ in a fashion requiring copyright permission, other than the making of an
+ exact copy.  The resulting work is called a "modified version" of the
+ earlier work or a work "based on" the earlier work.
+ .
+   A "covered work" means either the unmodified Program or a work based
+ on the Program.
+ .
+   To "propagate" a work means to do anything with it that, without
+ permission, would make you directly or secondarily liable for
+ infringement under applicable copyright law, except executing it on a
+ computer or modifying a private copy.  Propagation includes copying,
+ distribution (with or without modification), making available to the
+ public, and in some countries other activities as well.
+ .
+   To "convey" a work means any kind of propagation that enables other
+ parties to make or receive copies.  Mere interaction with a user through
+ a computer network, with no transfer of a copy, is not conveying.
+ .
+   An interactive user interface displays "Appropriate Legal Notices"
+ to the extent that it includes a convenient and prominently visible
+ feature that (1) displays an appropriate copyright notice, and (2)
+ tells the user that there is no warranty for the work (except to the
+ extent that warranties are provided), that licensees may convey the
+ work under this License, and how to view a copy of this License.  If
+ the interface presents a list of user commands or options, such as a
+ menu, a prominent item in the list meets this criterion.
+ .
+   1. Source Code.
+ .
+   The "source code" for a work means the preferred form of the work
+ for making modifications to it.  "Object code" means any non-source
+ form of a work.
+ .
+   A "Standard Interface" means an interface that either is an official
+ standard defined by a recognized standards body, or, in the case of
+ interfaces specified for a particular programming language, one that
+ is widely used among developers working in that language.
+ .
+   The "System Libraries" of an executable work include anything, other
+ than the work as a whole, that (a) is included in the normal form of
+ packaging a Major Component, but which is not part of that Major
+ Component, and (b) serves only to enable use of the work with that
+ Major Component, or to implement a Standard Interface for which an
+ implementation is available to the public in source code form.  A
+ "Major Component", in this context, means a major essential component
+ (kernel, window system, and so on) of the specific operating system
+ (if any) on which the executable work runs, or a compiler used to
+ produce the work, or an object code interpreter used to run it.
+ .
+   The "Corresponding Source" for a work in object code form means all
+ the source code needed to generate, install, and (for an executable
+ work) run the object code and to modify the work, including scripts to
+ control those activities.  However, it does not include the work's
+ System Libraries, or general-purpose tools or generally available free
+ programs which are used unmodified in performing those activities but
+ which are not part of the work.  For example, Corresponding Source
+ includes interface definition files associated with source files for
+ the work, and the source code for shared libraries and dynamically
+ linked subprograms that the work is specifically designed to require,
+ such as by intimate data communication or control flow between those
+ subprograms and other parts of the work.
+ .
+   The Corresponding Source need not include anything that users
+ can regenerate automatically from other parts of the Corresponding
+ Source.
+ .
+   The Corresponding Source for a work in source code form is that
+ same work.
+ .
+   2. Basic Permissions.
+ .
+   All rights granted under this License are granted for the term of
+ copyright on the Program, and are irrevocable provided the stated
+ conditions are met.  This License explicitly affirms your unlimited
+ permission to run the unmodified Program.  The output from running a
+ covered work is covered by this License only if the output, given its
+ content, constitutes a covered work.  This License acknowledges your
+ rights of fair use or other equivalent, as provided by copyright law.
+ .
+   You may make, run and propagate covered works that you do not
+ convey, without conditions so long as your license otherwise remains
+ in force.  You may convey covered works to others for the sole purpose
+ of having them make modifications exclusively for you, or provide you
+ with facilities for running those works, provided that you comply with
+ the terms of this License in conveying all material for which you do
+ not control copyright.  Those thus making or running the covered works
+ for you must do so exclusively on your behalf, under your direction
+ and control, on terms that prohibit them from making any copies of
+ your copyrighted material outside their relationship with you.
+ .
+   Conveying under any other circumstances is permitted solely under
+ the conditions stated below.  Sublicensing is not allowed; section 10
+ makes it unnecessary.
+ .
+   3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+ .
+   No covered work shall be deemed part of an effective technological
+ measure under any applicable law fulfilling obligations under article
+ 11 of the WIPO copyright treaty adopted on 20 December 1996, or
+ similar laws prohibiting or restricting circumvention of such
+ measures.
+ .
+   When you convey a covered work, you waive any legal power to forbid
+ circumvention of technological measures to the extent such circumvention
+ is effected by exercising rights under this License with respect to
+ the covered work, and you disclaim any intention to limit operation or
+ modification of the work as a means of enforcing, against the work's
+ users, your or third parties' legal rights to forbid circumvention of
+ technological measures.
+ .
+   4. Conveying Verbatim Copies.
+ .
+   You may convey verbatim copies of the Program's source code as you
+ receive it, in any medium, provided that you conspicuously and
+ appropriately publish on each copy an appropriate copyright notice;
+ keep intact all notices stating that this License and any
+ non-permissive terms added in accord with section 7 apply to the code;
+ keep intact all notices of the absence of any warranty; and give all
+ recipients a copy of this License along with the Program.
+ .
+   You may charge any price or no price for each copy that you convey,
+ and you may offer support or warranty protection for a fee.
+ .
+   5. Conveying Modified Source Versions.
+ .
+   You may convey a work based on the Program, or the modifications to
+ produce it from the Program, in the form of source code under the
+ terms of section 4, provided that you also meet all of these conditions:
+ .
+     a) The work must carry prominent notices stating that you modified
+     it, and giving a relevant date.
+ .
+     b) The work must carry prominent notices stating that it is
+     released under this License and any conditions added under section
+     7.  This requirement modifies the requirement in section 4 to
+     "keep intact all notices".
+ .
+     c) You must license the entire work, as a whole, under this
+     License to anyone who comes into possession of a copy.  This
+     License will therefore apply, along with any applicable section 7
+     additional terms, to the whole of the work, and all its parts,
+     regardless of how they are packaged.  This License gives no
+     permission to license the work in any other way, but it does not
+     invalidate such permission if you have separately received it.
+ .
+     d) If the work has interactive user interfaces, each must display
+     Appropriate Legal Notices; however, if the Program has interactive
+     interfaces that do not display Appropriate Legal Notices, your
+     work need not make them do so.
+ .
+   A compilation of a covered work with other separate and independent
+ works, which are not by their nature extensions of the covered work,
+ and which are not combined with it such as to form a larger program,
+ in or on a volume of a storage or distribution medium, is called an
+ "aggregate" if the compilation and its resulting copyright are not
+ used to limit the access or legal rights of the compilation's users
+ beyond what the individual works permit.  Inclusion of a covered work
+ in an aggregate does not cause this License to apply to the other
+ parts of the aggregate.
+ .
+   6. Conveying Non-Source Forms.
+ .
+   You may convey a covered work in object code form under the terms
+ of sections 4 and 5, provided that you also convey the
+ machine-readable Corresponding Source under the terms of this License,
+ in one of these ways:
+ .
+     a) Convey the object code in, or embodied in, a physical product
+     (including a physical distribution medium), accompanied by the
+     Corresponding Source fixed on a durable physical medium
+     customarily used for software interchange.
+ .
+     b) Convey the object code in, or embodied in, a physical product
+     (including a physical distribution medium), accompanied by a
+     written offer, valid for at least three years and valid for as
+     long as you offer spare parts or customer support for that product
+     model, to give anyone who possesses the object code either (1) a
+     copy of the Corresponding Source for all the software in the
+     product that is covered by this License, on a durable physical
+     medium customarily used for software interchange, for a price no
+     more than your reasonable cost of physically performing this
+     conveying of source, or (2) access to copy the
+     Corresponding Source from a network server at no charge.
+ .
+     c) Convey individual copies of the object code with a copy of the
+     written offer to provide the Corresponding Source.  This
+     alternative is allowed only occasionally and noncommercially, and
+     only if you received the object code with such an offer, in accord
+     with subsection 6b.
+ .
+     d) Convey the object code by offering access from a designated
+     place (gratis or for a charge), and offer equivalent access to the
+     Corresponding Source in the same way through the same place at no
+     further charge.  You need not require recipients to copy the
+     Corresponding Source along with the object code.  If the place to
+     copy the object code is a network server, the Corresponding Source
+     may be on a different server (operated by you or a third party)
+     that supports equivalent copying facilities, provided you maintain
+     clear directions next to the object code saying where to find the
+     Corresponding Source.  Regardless of what server hosts the
+     Corresponding Source, you remain obligated to ensure that it is
+     available for as long as needed to satisfy these requirements.
+ .
+     e) Convey the object code using peer-to-peer transmission, provided
+     you inform other peers where the object code and Corresponding
+     Source of the work are being offered to the general public at no
+     charge under subsection 6d.
+ .
+   A separable portion of the object code, whose source code is excluded
+ from the Corresponding Source as a System Library, need not be
+ included in conveying the object code work.
+ .
+   A "User Product" is either (1) a "consumer product", which means any
+ tangible personal property which is normally used for personal, family,
+ or household purposes, or (2) anything designed or sold for incorporation
+ into a dwelling.  In determining whether a product is a consumer product,
+ doubtful cases shall be resolved in favor of coverage.  For a particular
+ product received by a particular user, "normally used" refers to a
+ typical or common use of that class of product, regardless of the status
+ of the particular user or of the way in which the particular user
+ actually uses, or expects or is expected to use, the product.  A product
+ is a consumer product regardless of whether the product has substantial
+ commercial, industrial or non-consumer uses, unless such uses represent
+ the only significant mode of use of the product.
+ .
+   "Installation Information" for a User Product means any methods,
+ procedures, authorization keys, or other information required to install
+ and execute modified versions of a covered work in that User Product from
+ a modified version of its Corresponding Source.  The information must
+ suffice to ensure that the continued functioning of the modified object
+ code is in no case prevented or interfered with solely because
+ modification has been made.
+ .
+   If you convey an object code work under this section in, or with, or
+ specifically for use in, a User Product, and the conveying occurs as
+ part of a transaction in which the right of possession and use of the
+ User Product is transferred to the recipient in perpetuity or for a
+ fixed term (regardless of how the transaction is characterized), the
+ Corresponding Source conveyed under this section must be accompanied
+ by the Installation Information.  But this requirement does not apply
+ if neither you nor any third party retains the ability to install
+ modified object code on the User Product (for example, the work has
+ been installed in ROM).
+ .
+   The requirement to provide Installation Information does not include a
+ requirement to continue to provide support service, warranty, or updates
+ for a work that has been modified or installed by the recipient, or for
+ the User Product in which it has been modified or installed.  Access to a
+ network may be denied when the modification itself materially and
+ adversely affects the operation of the network or violates the rules and
+ protocols for communication across the network.
+ .
+   Corresponding Source conveyed, and Installation Information provided,
+ in accord with this section must be in a format that is publicly
+ documented (and with an implementation available to the public in
+ source code form), and must require no special password or key for
+ unpacking, reading or copying.
+ .
+   7. Additional Terms.
+ .
+   "Additional permissions" are terms that supplement the terms of this
+ License by making exceptions from one or more of its conditions.
+ Additional permissions that are applicable to the entire Program shall
+ be treated as though they were included in this License, to the extent
+ that they are valid under applicable law.  If additional permissions
+ apply only to part of the Program, that part may be used separately
+ under those permissions, but the entire Program remains governed by
+ this License without regard to the additional permissions.
+ .
+   When you convey a copy of a covered work, you may at your option
+ remove any additional permissions from that copy, or from any part of
+ it.  (Additional permissions may be written to require their own
+ removal in certain cases when you modify the work.)  You may place
+ additional permissions on material, added by you to a covered work,
+ for which you have or can give appropriate copyright permission.
+ .
+   Notwithstanding any other provision of this License, for material you
+ add to a covered work, you may (if authorized by the copyright holders of
+ that material) supplement the terms of this License with terms:
+ .
+     a) Disclaiming warranty or limiting liability differently from the
+     terms of sections 15 and 16 of this License; or
+ .
+     b) Requiring preservation of specified reasonable legal notices or
+     author attributions in that material or in the Appropriate Legal
+     Notices displayed by works containing it; or
+ .
+     c) Prohibiting misrepresentation of the origin of that material, or
+     requiring that modified versions of such material be marked in
+     reasonable ways as different from the original version; or
+ .
+     d) Limiting the use for publicity purposes of names of licensors or
+     authors of the material; or
+ .
+     e) Declining to grant rights under trademark law for use of some
+     trade names, trademarks, or service marks; or
+ .
+     f) Requiring indemnification of licensors and authors of that
+     material by anyone who conveys the material (or modified versions of
+     it) with contractual assumptions of liability to the recipient, for
+     any liability that these contractual assumptions directly impose on
+     those licensors and authors.
+ .
+   All other non-permissive additional terms are considered "further
+ restrictions" within the meaning of section 10.  If the Program as you
+ received it, or any part of it, contains a notice stating that it is
+ governed by this License along with a term that is a further
+ restriction, you may remove that term.  If a license document contains
+ a further restriction but permits relicensing or conveying under this
+ License, you may add to a covered work material governed by the terms
+ of that license document, provided that the further restriction does
+ not survive such relicensing or conveying.
+ .
+   If you add terms to a covered work in accord with this section, you
+ must place, in the relevant source files, a statement of the
+ additional terms that apply to those files, or a notice indicating
+ where to find the applicable terms.
+ .
+   Additional terms, permissive or non-permissive, may be stated in the
+ form of a separately written license, or stated as exceptions;
+ the above requirements apply either way.
+ .
+   8. Termination.
+ .
+   You may not propagate or modify a covered work except as expressly
+ provided under this License.  Any attempt otherwise to propagate or
+ modify it is void, and will automatically terminate your rights under
+ this License (including any patent licenses granted under the third
+ paragraph of section 11).
+ .
+   However, if you cease all violation of this License, then your
+ license from a particular copyright holder is reinstated (a)
+ provisionally, unless and until the copyright holder explicitly and
+ finally terminates your license, and (b) permanently, if the copyright
+ holder fails to notify you of the violation by some reasonable means
+ prior to 60 days after the cessation.
+ .
+   Moreover, your license from a particular copyright holder is
+ reinstated permanently if the copyright holder notifies you of the
+ violation by some reasonable means, this is the first time you have
+ received notice of violation of this License (for any work) from that
+ copyright holder, and you cure the violation prior to 30 days after
+ your receipt of the notice.
+ .
+   Termination of your rights under this section does not terminate the
+ licenses of parties who have received copies or rights from you under
+ this License.  If your rights have been terminated and not permanently
+ reinstated, you do not qualify to receive new licenses for the same
+ material under section 10.
+ .
+   9. Acceptance Not Required for Having Copies.
+ .
+   You are not required to accept this License in order to receive or
+ run a copy of the Program.  Ancillary propagation of a covered work
+ occurring solely as a consequence of using peer-to-peer transmission
+ to receive a copy likewise does not require acceptance.  However,
+ nothing other than this License grants you permission to propagate or
+ modify any covered work.  These actions infringe copyright if you do
+ not accept this License.  Therefore, by modifying or propagating a
+ covered work, you indicate your acceptance of this License to do so.
+ .
+   10. Automatic Licensing of Downstream Recipients.
+ .
+   Each time you convey a covered work, the recipient automatically
+ receives a license from the original licensors, to run, modify and
+ propagate that work, subject to this License.  You are not responsible
+ for enforcing compliance by third parties with this License.
+ .
+   An "entity transaction" is a transaction transferring control of an
+ organization, or substantially all assets of one, or subdividing an
+ organization, or merging organizations.  If propagation of a covered
+ work results from an entity transaction, each party to that
+ transaction who receives a copy of the work also receives whatever
+ licenses to the work the party's predecessor in interest had or could
+ give under the previous paragraph, plus a right to possession of the
+ Corresponding Source of the work from the predecessor in interest, if
+ the predecessor has it or can get it with reasonable efforts.
+ .
+   You may not impose any further restrictions on the exercise of the
+ rights granted or affirmed under this License.  For example, you may
+ not impose a license fee, royalty, or other charge for exercise of
+ rights granted under this License, and you may not initiate litigation
+ (including a cross-claim or counterclaim in a lawsuit) alleging that
+ any patent claim is infringed by making, using, selling, offering for
+ sale, or importing the Program or any portion of it.
+ .
+   11. Patents.
+ .
+   A "contributor" is a copyright holder who authorizes use under this
+ License of the Program or a work on which the Program is based.  The
+ work thus licensed is called the contributor's "contributor version".
+ .
+   A contributor's "essential patent claims" are all patent claims
+ owned or controlled by the contributor, whether already acquired or
+ hereafter acquired, that would be infringed by some manner, permitted
+ by this License, of making, using, or selling its contributor version,
+ but do not include claims that would be infringed only as a
+ consequence of further modification of the contributor version.  For
+ purposes of this definition, "control" includes the right to grant
+ patent sublicenses in a manner consistent with the requirements of
+ this License.
+ .
+   Each contributor grants you a non-exclusive, worldwide, royalty-free
+ patent license under the contributor's essential patent claims, to
+ make, use, sell, offer for sale, import and otherwise run, modify and
+ propagate the contents of its contributor version.
+ .
+   In the following three paragraphs, a "patent license" is any express
+ agreement or commitment, however denominated, not to enforce a patent
+ (such as an express permission to practice a patent or covenant not to
+ sue for patent infringement).  To "grant" such a patent license to a
+ party means to make such an agreement or commitment not to enforce a
+ patent against the party.
+ .
+   If you convey a covered work, knowingly relying on a patent license,
+ and the Corresponding Source of the work is not available for anyone
+ to copy, free of charge and under the terms of this License, through a
+ publicly available network server or other readily accessible means,
+ then you must either (1) cause the Corresponding Source to be so
+ available, or (2) arrange to deprive yourself of the benefit of the
+ patent license for this particular work, or (3) arrange, in a manner
+ consistent with the requirements of this License, to extend the patent
+ license to downstream recipients.  "Knowingly relying" means you have
+ actual knowledge that, but for the patent license, your conveying the
+ covered work in a country, or your recipient's use of the covered work
+ in a country, would infringe one or more identifiable patents in that
+ country that you have reason to believe are valid.
+ .
+   If, pursuant to or in connection with a single transaction or
+ arrangement, you convey, or propagate by procuring conveyance of, a
+ covered work, and grant a patent license to some of the parties
+ receiving the covered work authorizing them to use, propagate, modify
+ or convey a specific copy of the covered work, then the patent license
+ you grant is automatically extended to all recipients of the covered
+ work and works based on it.
+ .
+   A patent license is "discriminatory" if it does not include within
+ the scope of its coverage, prohibits the exercise of, or is
+ conditioned on the non-exercise of one or more of the rights that are
+ specifically granted under this License.  You may not convey a covered
+ work if you are a party to an arrangement with a third party that is
+ in the business of distributing software, under which you make payment
+ to the third party based on the extent of your activity of conveying
+ the work, and under which the third party grants, to any of the
+ parties who would receive the covered work from you, a discriminatory
+ patent license (a) in connection with copies of the covered work
+ conveyed by you (or copies made from those copies), or (b) primarily
+ for and in connection with specific products or compilations that
+ contain the covered work, unless you entered into that arrangement,
+ or that patent license was granted, prior to 28 March 2007.
+ .
+   Nothing in this License shall be construed as excluding or limiting
+ any implied license or other defenses to infringement that may
+ otherwise be available to you under applicable patent law.
+ .
+   12. No Surrender of Others' Freedom.
+ .
+   If conditions are imposed on you (whether by court order, agreement or
+ otherwise) that contradict the conditions of this License, they do not
+ excuse you from the conditions of this License.  If you cannot convey a
+ covered work so as to satisfy simultaneously your obligations under this
+ License and any other pertinent obligations, then as a consequence you may
+ not convey it at all.  For example, if you agree to terms that obligate you
+ to collect a royalty for further conveying from those to whom you convey
+ the Program, the only way you could satisfy both those terms and this
+ License would be to refrain entirely from conveying the Program.
+ .
+   13. Use with the GNU Affero General Public License.
+ .
+   Notwithstanding any other provision of this License, you have
+ permission to link or combine any covered work with a work licensed
+ under version 3 of the GNU Affero General Public License into a single
+ combined work, and to convey the resulting work.  The terms of this
+ License will continue to apply to the part which is the covered work,
+ but the special requirements of the GNU Affero General Public License,
+ section 13, concerning interaction through a network will apply to the
+ combination as such.
+ .
+   14. Revised Versions of this License.
+ .
+   The Free Software Foundation may publish revised and/or new versions of
+ the GNU General Public License from time to time.  Such new versions will
+ be similar in spirit to the present version, but may differ in detail to
+ address new problems or concerns.
+ .
+   Each version is given a distinguishing version number.  If the
+ Program specifies that a certain numbered version of the GNU General
+ Public License "or any later version" applies to it, you have the
+ option of following the terms and conditions either of that numbered
+ version or of any later version published by the Free Software
+ Foundation.  If the Program does not specify a version number of the
+ GNU General Public License, you may choose any version ever published
+ by the Free Software Foundation.
+ .
+   If the Program specifies that a proxy can decide which future
+ versions of the GNU General Public License can be used, that proxy's
+ public statement of acceptance of a version permanently authorizes you
+ to choose that version for the Program.
+ .
+   Later license versions may give you additional or different
+ permissions.  However, no additional obligations are imposed on any
+ author or copyright holder as a result of your choosing to follow a
+ later version.
+ .
+   15. Disclaimer of Warranty.
+ .
+   THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+ APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+ HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+ OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+ THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+ IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+ .
+   16. Limitation of Liability.
+ .
+   IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+ WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+ THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+ GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+ USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+ DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+ PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+ EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGES.
+ .
+   17. Interpretation of Sections 15 and 16.
+ .
+   If the disclaimer of warranty and limitation of liability provided
+ above cannot be given local legal effect according to their terms,
+ reviewing courts shall apply local law that most closely approximates
+ an absolute waiver of all civil liability in connection with the
+ Program, unless a warranty or assumption of liability accompanies a
+ copy of the Program in return for a fee.
+ .
+                      END OF TERMS AND CONDITIONS
+ .
+             How to Apply These Terms to Your New Programs
+ .
+   If you develop a new program, and you want it to be of the greatest
+ possible use to the public, the best way to achieve this is to make it
+ free software which everyone can redistribute and change under these terms.
+ .
+   To do so, attach the following notices to the program.  It is safest
+ to attach them to the start of each source file to most effectively
+ state the exclusion of warranty; and each file should have at least
+ the "copyright" line and a pointer to where the full notice is found.
+ .
+     <one line to give the program's name and a brief idea of what it does.>
+     Copyright (C) <year>  <name of author>
+ .
+     This program is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+ .
+     This program is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+ .
+     You should have received a copy of the GNU General Public License
+     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ .
+ Also add information on how to contact you by electronic and paper mail.
+ .
+   If the program does terminal interaction, make it output a short
+ notice like this when it starts in an interactive mode:
+ .
+     <program>  Copyright (C) <year>  <name of author>
+     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+     This is free software, and you are welcome to redistribute it
+     under certain conditions; type `show c' for details.
+ .
+ The hypothetical commands `show w' and `show c' should show the appropriate
+ parts of the General Public License.  Of course, your program's commands
+ might be different; for a GUI interface, you would use an "about box".
+ .
+   You should also get your employer (if you work as a programmer) or school,
+ if any, to sign a "copyright disclaimer" for the program, if necessary.
+ For more information on this, and how to apply and follow the GNU GPL, see
+ <https://www.gnu.org/licenses/>.
+ .
+   The GNU General Public License does not permit incorporating your program
+ into proprietary programs.  If your program is a subroutine library, you
+ may consider it more useful to permit linking proprietary applications with
+ the library.  If this is what you want to do, use the GNU Lesser General
+ Public License instead of this License.  But first, please read
+ <https://www.gnu.org/licenses/why-not-lgpl.html>.
