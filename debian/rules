@@ -4,16 +4,14 @@ export DH_VERBOSE = 1
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1
-currLang = $(shell echo ${LANG})
 export CPPFLAGS := "-DNDEBUG"
-export GOCACHE=/tmp/.cache/go-build
-export HOME = $(CURDIR)
+export HOME=$(CURDIR)
 
 %:
 	dh $@
 
 override_dh_auto_build:
-	mkdir /tmp/.cache/go-build; export GOCACHE=/tmp/.cache/go-build
+	tar -xvf debian/vendor.tar.xz
 	make linux-package
 
 override_dh_auto_test:
