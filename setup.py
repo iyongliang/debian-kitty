@@ -1489,13 +1489,16 @@ def create_linux_bundle_gunk(ddir: str, args: Options) -> None:
     base = Path(ddir)
     in_src_launcher = base / (f'{libdir_name}/kitty/kitty/launcher/kitty')
     launcher = base / 'bin/kitty'
-    skip_docs = False
+    # skip build docs
+    # skip_docs = False
+    skip_docs = True
     if not os.path.exists('docs/_build/html'):
         kitten_exe = os.path.join(os.path.dirname(str(launcher)), 'kitten')
         if os.path.exists(kitten_exe):
             os.environ['KITTEN_EXE_FOR_DOCS'] = kitten_exe
             make = 'gmake' if is_freebsd else 'make'
-            run_tool([make, 'docs'])
+            # skip build docs
+            # run_tool([make, 'docs'])
         else:
             if args.skip_building_kitten:
                 skip_docs = True
